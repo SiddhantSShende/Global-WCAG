@@ -89,7 +89,7 @@ celery -A backend.app.worker.celery_app worker -l info   # worker (separate shel
 # Frontend dev server (hot reload, proxies the API to :8000):
 #   npm --prefix frontend run dev      # http://localhost:5173
 
-# 6) Submit a web audit you are authorized to run:
+# 7) Submit a web audit you are authorized to run:
 curl -X POST localhost:8000/jobs \
   -H 'content-type: application/json' \
   -d '{"target_type":"web","target_ref":"https://example.com","authorized":true,"scope_allowlist":["example.com"]}'
@@ -132,5 +132,3 @@ Every job requires an **authorization attestation** and an explicit **in-scope a
 ## License
 
 Application code: choose your license. Vendored tools retain their own licenses (see `third_party/VERSIONS.lock`); note **MPL-2.0** (axe-core), **LGPL-3.0** (Pa11y), **Apache-2.0** (Lighthouse, amass, ATF, Appium), **BSD-3** (HTML_CodeSniffer), **MIT** (ProjectDiscovery tools). Review AGPL exposure if you swap in MinIO/Redis (prefer Valkey + a maintained S3 store).
-#   G l o b a l - W C A G  
- 
