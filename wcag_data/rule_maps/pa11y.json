@@ -1,0 +1,7 @@
+{
+  "_meta": {
+    "engine": "Pa11y + HTML_CodeSniffer (htmlcs runner)",
+    "primary_mechanism": "The SC is PARSED from the HTML_CodeSniffer code itself. Codes look like 'WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.Fail' — the token '1_4_6' is the success criterion (-> 1.4.6). The normalizer extracts it with a regex; this file only holds overrides for codes that don't follow the pattern.",
+    "note": "Keys starting with '_' are ignored. Pa11y/HTML_CodeSniffer is our main source of automated AAA (WCAG2AAA standard) checks."
+  }
+}

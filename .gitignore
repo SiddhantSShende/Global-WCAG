@@ -1,0 +1,39 @@
+# ── Python ──
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ── Node / frontend build ──
+node_modules/
+npm-debug.log*
+frontend/dist/
+
+# ── Vendored tools (cloned by scripts/setup_tools.sh) ──
+third_party/
+!third_party/.gitkeep
+!third_party/VERSIONS.lock
+
+# ── Runtime artifacts ──
+artifacts/
+*.docx
+*.xlsx
+*.pdf
+!docs/**/*.docx
+!backend/app/reporting/templates/*.docx
+
+# ── Object store / data ──
+data/
+minio-data/
+postgres-data/
+
+# ── OS / editor ──
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Minimal host app; the accessibility audit runs entirely as an instrumentation
+     test that inspects OTHER apps' windows via UiAutomation (cross-app access). -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application android:label="A11y ATF Harness" android:allowBackup="false" />
+</manifest>

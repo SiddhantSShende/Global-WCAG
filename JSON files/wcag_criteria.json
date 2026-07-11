@@ -1,0 +1,1718 @@
+{
+  "meta": {
+    "generator": "build_wcag_json.py",
+    "source": "W3C WCAG 2.0/2.1/2.2 Recommendations",
+    "testability_legend": {
+      "auto": "Machine-decidable; clean result is meaningful evidence.",
+      "semi": "Machine finds some violations; clean result is NOT proof of pass.",
+      "manual": "Not reliably machine-testable; requires human/AT review."
+    }
+  },
+  "criteria": [
+    {
+      "id": "SC1.1.1",
+      "num": "1.1.1",
+      "name": "Non-text Content",
+      "level": "A",
+      "principle_num": "1",
+      "principle": "Perceivable",
+      "guideline_num": "1.1",
+      "guideline": "Text Alternatives",
+      "added_in": "2.0",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "testability": "semi",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content.html",
+      "note": "Tools detect missing alt/label. Whether alt text is MEANINGFUL is manual."
+    },
+    {
+      "id": "SC1.2.1",
+      "num": "1.2.1",
+      "name": "Audio-only and Video-only (Prerecorded)",
+      "level": "A",
+      "principle_num": "1",
+      "principle": "Perceivable",
+      "guideline_num": "1.2",
+      "guideline": "Time-based Media",
+      "added_in": "2.0",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "testability": "manual",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/audio-only-and-video-only-prerecorded.html",
+      "note": "Requires human review of media alternatives."
+    },
+    {
+      "id": "SC1.2.2",
+      "num": "1.2.2",
+      "name": "Captions (Prerecorded)",
+      "level": "A",
+      "principle_num": "1",
+      "principle": "Perceivable",
+      "guideline_num": "1.2",
+      "guideline": "Time-based Media",
+      "added_in": "2.0",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "testability": "manual",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/captions-prerecorded.html",
+      "note": "Tools can flag <video> without <track>; caption quality is manual."
+    },
+    {
+      "id": "SC1.2.3",
+      "num": "1.2.3",
+      "name": "Audio Description or Media Alternative (Prerecorded)",
+      "level": "A",
+      "principle_num": "1",
+      "principle": "Perceivable",
+      "guideline_num": "1.2",
+      "guideline": "Time-based Media",
+      "added_in": "2.0",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "testability": "manual",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/audio-description-or-media-alternative-prerecorded.html",
+      "note": ""
+    },
+    {
+      "id": "SC1.2.4",
+      "num": "1.2.4",
+      "name": "Captions (Live)",
+      "level": "AA",
+      "principle_num": "1",
+      "principle": "Perceivable",
+      "guideline_num": "1.2",
+      "guideline": "Time-based Media",
+      "added_in": "2.0",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "testability": "manual",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/captions-live.html",
+      "note": ""
+    },
+    {
+      "id": "SC1.2.5",
+      "num": "1.2.5",
+      "name": "Audio Description (Prerecorded)",
+      "level": "AA",
+      "principle_num": "1",
+      "principle": "Perceivable",
+      "guideline_num": "1.2",
+      "guideline": "Time-based Media",
+      "added_in": "2.0",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "testability": "manual",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/audio-description-prerecorded.html",
+      "note": ""
+    },
+    {
+      "id": "SC1.2.6",
+      "num": "1.2.6",
+      "name": "Sign Language (Prerecorded)",
+      "level": "AAA",
+      "principle_num": "1",
+      "principle": "Perceivable",
+      "guideline_num": "1.2",
+      "guideline": "Time-based Media",
+      "added_in": "2.0",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "testability": "manual",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/sign-language-prerecorded.html",
+      "note": ""
+    },
+    {
+      "id": "SC1.2.7",
+      "num": "1.2.7",
+      "name": "Extended Audio Description (Prerecorded)",
+      "level": "AAA",
+      "principle_num": "1",
+      "principle": "Perceivable",
+      "guideline_num": "1.2",
+      "guideline": "Time-based Media",
+      "added_in": "2.0",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "testability": "manual",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/extended-audio-description-prerecorded.html",
+      "note": ""
+    },
+    {
+      "id": "SC1.2.8",
+      "num": "1.2.8",
+      "name": "Media Alternative (Prerecorded)",
+      "level": "AAA",
+      "principle_num": "1",
+      "principle": "Perceivable",
+      "guideline_num": "1.2",
+      "guideline": "Time-based Media",
+      "added_in": "2.0",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "testability": "manual",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/media-alternative-prerecorded.html",
+      "note": ""
+    },
+    {
+      "id": "SC1.2.9",
+      "num": "1.2.9",
+      "name": "Audio-only (Live)",
+      "level": "AAA",
+      "principle_num": "1",
+      "principle": "Perceivable",
+      "guideline_num": "1.2",
+      "guideline": "Time-based Media",
+      "added_in": "2.0",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "testability": "manual",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/audio-only-live.html",
+      "note": ""
+    },
+    {
+      "id": "SC1.3.1",
+      "num": "1.3.1",
+      "name": "Info and Relationships",
+      "level": "A",
+      "principle_num": "1",
+      "principle": "Perceivable",
+      "guideline_num": "1.3",
+      "guideline": "Adaptable",
+      "added_in": "2.0",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "testability": "semi",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships.html",
+      "note": "Tools catch some structural issues (tables, labels, headings) but not all."
+    },
+    {
+      "id": "SC1.3.2",
+      "num": "1.3.2",
+      "name": "Meaningful Sequence",
+      "level": "A",
+      "principle_num": "1",
+      "principle": "Perceivable",
+      "guideline_num": "1.3",
+      "guideline": "Adaptable",
+      "added_in": "2.0",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "testability": "semi",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/meaningful-sequence.html",
+      "note": "DOM order heuristics only; true reading order is manual."
+    },
+    {
+      "id": "SC1.3.3",
+      "num": "1.3.3",
+      "name": "Sensory Characteristics",
+      "level": "A",
+      "principle_num": "1",
+      "principle": "Perceivable",
+      "guideline_num": "1.3",
+      "guideline": "Adaptable",
+      "added_in": "2.0",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "testability": "manual",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/sensory-characteristics.html",
+      "note": ""
+    },
+    {
+      "id": "SC1.3.4",
+      "num": "1.3.4",
+      "name": "Orientation",
+      "level": "AA",
+      "principle_num": "1",
+      "principle": "Perceivable",
+      "guideline_num": "1.3",
+      "guideline": "Adaptable",
+      "added_in": "2.1",
+      "versions": [
+        "2.1",
+        "2.2"
+      ],
+      "testability": "semi",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/orientation.html",
+      "note": "Detect orientation lock in CSS/meta; confirm manually."
+    },
+    {
+      "id": "SC1.3.5",
+      "num": "1.3.5",
+      "name": "Identify Input Purpose",
+      "level": "AA",
+      "principle_num": "1",
+      "principle": "Perceivable",
+      "guideline_num": "1.3",
+      "guideline": "Adaptable",
+      "added_in": "2.1",
+      "versions": [
+        "2.1",
+        "2.2"
+      ],
+      "testability": "semi",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/identify-input-purpose.html",
+      "note": "Detect missing/invalid autocomplete on known fields."
+    },
+    {
+      "id": "SC1.3.6",
+      "num": "1.3.6",
+      "name": "Identify Purpose",
+      "level": "AAA",
+      "principle_num": "1",
+      "principle": "Perceivable",
+      "guideline_num": "1.3",
+      "guideline": "Adaptable",
+      "added_in": "2.1",
+      "versions": [
+        "2.1",
+        "2.2"
+      ],
+      "testability": "manual",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/identify-purpose.html",
+      "note": ""
+    },
+    {
+      "id": "SC1.4.1",
+      "num": "1.4.1",
+      "name": "Use of Color",
+      "level": "A",
+      "principle_num": "1",
+      "principle": "Perceivable",
+      "guideline_num": "1.4",
+      "guideline": "Distinguishable",
+      "added_in": "2.0",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "testability": "manual",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html",
+      "note": "Cannot reliably know if color is the SOLE means of conveying info."
+    },
+    {
+      "id": "SC1.4.2",
+      "num": "1.4.2",
+      "name": "Audio Control",
+      "level": "A",
+      "principle_num": "1",
+      "principle": "Perceivable",
+      "guideline_num": "1.4",
+      "guideline": "Distinguishable",
+      "added_in": "2.0",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "testability": "semi",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/audio-control.html",
+      "note": "Detect autoplay audio; control presence partly manual."
+    },
+    {
+      "id": "SC1.4.3",
+      "num": "1.4.3",
+      "name": "Contrast (Minimum)",
+      "level": "AA",
+      "principle_num": "1",
+      "principle": "Perceivable",
+      "guideline_num": "1.4",
+      "guideline": "Distinguishable",
+      "added_in": "2.0",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "testability": "auto",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html",
+      "note": "Computable from rendered colors. Strong automation."
+    },
+    {
+      "id": "SC1.4.4",
+      "num": "1.4.4",
+      "name": "Resize Text",
+      "level": "AA",
+      "principle_num": "1",
+      "principle": "Perceivable",
+      "guideline_num": "1.4",
+      "guideline": "Distinguishable",
+      "added_in": "2.0",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "testability": "semi",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/resize-text.html",
+      "note": "Detect user-scalable=no / maximum-scale; reflow after zoom is manual."
+    },
+    {
+      "id": "SC1.4.5",
+      "num": "1.4.5",
+      "name": "Images of Text",
+      "level": "AA",
+      "principle_num": "1",
+      "principle": "Perceivable",
+      "guideline_num": "1.4",
+      "guideline": "Distinguishable",
+      "added_in": "2.0",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "testability": "manual",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/images-of-text.html",
+      "note": ""
+    },
+    {
+      "id": "SC1.4.6",
+      "num": "1.4.6",
+      "name": "Contrast (Enhanced)",
+      "level": "AAA",
+      "principle_num": "1",
+      "principle": "Perceivable",
+      "guideline_num": "1.4",
+      "guideline": "Distinguishable",
+      "added_in": "2.0",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "testability": "auto",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-enhanced.html",
+      "note": "Same engine as 1.4.3 with 7:1 / 4.5:1 thresholds."
+    },
+    {
+      "id": "SC1.4.7",
+      "num": "1.4.7",
+      "name": "Low or No Background Audio",
+      "level": "AAA",
+      "principle_num": "1",
+      "principle": "Perceivable",
+      "guideline_num": "1.4",
+      "guideline": "Distinguishable",
+      "added_in": "2.0",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "testability": "manual",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/low-or-no-background-audio.html",
+      "note": ""
+    },
+    {
+      "id": "SC1.4.8",
+      "num": "1.4.8",
+      "name": "Visual Presentation",
+      "level": "AAA",
+      "principle_num": "1",
+      "principle": "Perceivable",
+      "guideline_num": "1.4",
+      "guideline": "Distinguishable",
+      "added_in": "2.0",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "testability": "semi",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/visual-presentation.html",
+      "note": "Some sub-checks (line length, justification) detectable; most manual."
+    },
+    {
+      "id": "SC1.4.9",
+      "num": "1.4.9",
+      "name": "Images of Text (No Exception)",
+      "level": "AAA",
+      "principle_num": "1",
+      "principle": "Perceivable",
+      "guideline_num": "1.4",
+      "guideline": "Distinguishable",
+      "added_in": "2.0",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "testability": "manual",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/images-of-text-no-exception.html",
+      "note": ""
+    },
+    {
+      "id": "SC1.4.10",
+      "num": "1.4.10",
+      "name": "Reflow",
+      "level": "AA",
+      "principle_num": "1",
+      "principle": "Perceivable",
+      "guideline_num": "1.4",
+      "guideline": "Distinguishable",
+      "added_in": "2.1",
+      "versions": [
+        "2.1",
+        "2.2"
+      ],
+      "testability": "semi",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/reflow.html",
+      "note": "Detect horizontal scroll at 320 CSS px; confirm no content loss manually."
+    },
+    {
+      "id": "SC1.4.11",
+      "num": "1.4.11",
+      "name": "Non-text Contrast",
+      "level": "AA",
+      "principle_num": "1",
+      "principle": "Perceivable",
+      "guideline_num": "1.4",
+      "guideline": "Distinguishable",
+      "added_in": "2.1",
+      "versions": [
+        "2.1",
+        "2.2"
+      ],
+      "testability": "semi",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html",
+      "note": "UI-component/graphics contrast is hard to isolate automatically."
+    },
+    {
+      "id": "SC1.4.12",
+      "num": "1.4.12",
+      "name": "Text Spacing",
+      "level": "AA",
+      "principle_num": "1",
+      "principle": "Perceivable",
+      "guideline_num": "1.4",
+      "guideline": "Distinguishable",
+      "added_in": "2.1",
+      "versions": [
+        "2.1",
+        "2.2"
+      ],
+      "testability": "semi",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing.html",
+      "note": "Apply text-spacing override, detect clipping/overlap heuristically."
+    },
+    {
+      "id": "SC1.4.13",
+      "num": "1.4.13",
+      "name": "Content on Hover or Focus",
+      "level": "AA",
+      "principle_num": "1",
+      "principle": "Perceivable",
+      "guideline_num": "1.4",
+      "guideline": "Distinguishable",
+      "added_in": "2.1",
+      "versions": [
+        "2.1",
+        "2.2"
+      ],
+      "testability": "manual",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/content-on-hover-or-focus.html",
+      "note": ""
+    },
+    {
+      "id": "SC2.1.1",
+      "num": "2.1.1",
+      "name": "Keyboard",
+      "level": "A",
+      "principle_num": "2",
+      "principle": "Operable",
+      "guideline_num": "2.1",
+      "guideline": "Keyboard Accessible",
+      "added_in": "2.0",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "testability": "semi",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html",
+      "note": "Detect obvious non-focusable interactive elements; full op is manual."
+    },
+    {
+      "id": "SC2.1.2",
+      "num": "2.1.2",
+      "name": "No Keyboard Trap",
+      "level": "A",
+      "principle_num": "2",
+      "principle": "Operable",
+      "guideline_num": "2.1",
+      "guideline": "Keyboard Accessible",
+      "added_in": "2.0",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "testability": "manual",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/no-keyboard-trap.html",
+      "note": "Requires interactive keyboard traversal to confirm."
+    },
+    {
+      "id": "SC2.1.3",
+      "num": "2.1.3",
+      "name": "Keyboard (No Exception)",
+      "level": "AAA",
+      "principle_num": "2",
+      "principle": "Operable",
+      "guideline_num": "2.1",
+      "guideline": "Keyboard Accessible",
+      "added_in": "2.0",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "testability": "manual",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/keyboard-no-exception.html",
+      "note": ""
+    },
+    {
+      "id": "SC2.1.4",
+      "num": "2.1.4",
+      "name": "Character Key Shortcuts",
+      "level": "A",
+      "principle_num": "2",
+      "principle": "Operable",
+      "guideline_num": "2.1",
+      "guideline": "Keyboard Accessible",
+      "added_in": "2.1",
+      "versions": [
+        "2.1",
+        "2.2"
+      ],
+      "testability": "manual",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/character-key-shortcuts.html",
+      "note": ""
+    },
+    {
+      "id": "SC2.2.1",
+      "num": "2.2.1",
+      "name": "Timing Adjustable",
+      "level": "A",
+      "principle_num": "2",
+      "principle": "Operable",
+      "guideline_num": "2.2",
+      "guideline": "Enough Time",
+      "added_in": "2.0",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "testability": "manual",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/timing-adjustable.html",
+      "note": ""
+    },
+    {
+      "id": "SC2.2.2",
+      "num": "2.2.2",
+      "name": "Pause, Stop, Hide",
+      "level": "A",
+      "principle_num": "2",
+      "principle": "Operable",
+      "guideline_num": "2.2",
+      "guideline": "Enough Time",
+      "added_in": "2.0",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "testability": "semi",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide.html",
+      "note": "Detect auto-updating/marquee/animation; control presence manual."
+    },
+    {
+      "id": "SC2.2.3",
+      "num": "2.2.3",
+      "name": "No Timing",
+      "level": "AAA",
+      "principle_num": "2",
+      "principle": "Operable",
+      "guideline_num": "2.2",
+      "guideline": "Enough Time",
+      "added_in": "2.0",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "testability": "manual",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/no-timing.html",
+      "note": ""
+    },
+    {
+      "id": "SC2.2.4",
+      "num": "2.2.4",
+      "name": "Interruptions",
+      "level": "AAA",
+      "principle_num": "2",
+      "principle": "Operable",
+      "guideline_num": "2.2",
+      "guideline": "Enough Time",
+      "added_in": "2.0",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "testability": "manual",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/interruptions.html",
+      "note": ""
+    },
+    {
+      "id": "SC2.2.5",
+      "num": "2.2.5",
+      "name": "Re-authenticating",
+      "level": "AAA",
+      "principle_num": "2",
+      "principle": "Operable",
+      "guideline_num": "2.2",
+      "guideline": "Enough Time",
+      "added_in": "2.0",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "testability": "manual",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/re-authenticating.html",
+      "note": ""
+    },
+    {
+      "id": "SC2.2.6",
+      "num": "2.2.6",
+      "name": "Timeouts",
+      "level": "AAA",
+      "principle_num": "2",
+      "principle": "Operable",
+      "guideline_num": "2.2",
+      "guideline": "Enough Time",
+      "added_in": "2.1",
+      "versions": [
+        "2.1",
+        "2.2"
+      ],
+      "testability": "manual",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/timeouts.html",
+      "note": ""
+    },
+    {
+      "id": "SC2.3.1",
+      "num": "2.3.1",
+      "name": "Three Flashes or Below Threshold",
+      "level": "A",
+      "principle_num": "2",
+      "principle": "Operable",
+      "guideline_num": "2.3",
+      "guideline": "Seizures and Physical Reactions",
+      "added_in": "2.0",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "testability": "semi",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/three-flashes-or-below-threshold.html",
+      "note": "Frame-analysis of video can flag flashing; embedded/streamed is manual."
+    },
+    {
+      "id": "SC2.3.2",
+      "num": "2.3.2",
+      "name": "Three Flashes",
+      "level": "AAA",
+      "principle_num": "2",
+      "principle": "Operable",
+      "guideline_num": "2.3",
+      "guideline": "Seizures and Physical Reactions",
+      "added_in": "2.0",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "testability": "semi",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/three-flashes.html",
+      "note": ""
+    },
+    {
+      "id": "SC2.3.3",
+      "num": "2.3.3",
+      "name": "Animation from Interactions",
+      "level": "AAA",
+      "principle_num": "2",
+      "principle": "Operable",
+      "guideline_num": "2.3",
+      "guideline": "Seizures and Physical Reactions",
+      "added_in": "2.1",
+      "versions": [
+        "2.1",
+        "2.2"
+      ],
+      "testability": "manual",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/animation-from-interactions.html",
+      "note": ""
+    },
+    {
+      "id": "SC2.4.1",
+      "num": "2.4.1",
+      "name": "Bypass Blocks",
+      "level": "A",
+      "principle_num": "2",
+      "principle": "Operable",
+      "guideline_num": "2.4",
+      "guideline": "Navigable",
+      "added_in": "2.0",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "testability": "semi",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/bypass-blocks.html",
+      "note": "Detect presence of skip link / landmarks; effectiveness manual."
+    },
+    {
+      "id": "SC2.4.2",
+      "num": "2.4.2",
+      "name": "Page Titled",
+      "level": "A",
+      "principle_num": "2",
+      "principle": "Operable",
+      "guideline_num": "2.4",
+      "guideline": "Navigable",
+      "added_in": "2.0",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "testability": "auto",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/page-titled.html",
+      "note": "Presence and non-emptiness of <title> is checkable; relevance is semi."
+    },
+    {
+      "id": "SC2.4.3",
+      "num": "2.4.3",
+      "name": "Focus Order",
+      "level": "A",
+      "principle_num": "2",
+      "principle": "Operable",
+      "guideline_num": "2.4",
+      "guideline": "Navigable",
+      "added_in": "2.0",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "testability": "semi",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/focus-order.html",
+      "note": "Detect positive tabindex / focusable hidden elements; logic is manual."
+    },
+    {
+      "id": "SC2.4.4",
+      "num": "2.4.4",
+      "name": "Link Purpose (In Context)",
+      "level": "A",
+      "principle_num": "2",
+      "principle": "Operable",
+      "guideline_num": "2.4",
+      "guideline": "Navigable",
+      "added_in": "2.0",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "testability": "semi",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context.html",
+      "note": "Detect empty/ambiguous link text; 'in context' meaning is manual."
+    },
+    {
+      "id": "SC2.4.5",
+      "num": "2.4.5",
+      "name": "Multiple Ways",
+      "level": "AA",
+      "principle_num": "2",
+      "principle": "Operable",
+      "guideline_num": "2.4",
+      "guideline": "Navigable",
+      "added_in": "2.0",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "testability": "manual",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways.html",
+      "note": ""
+    },
+    {
+      "id": "SC2.4.6",
+      "num": "2.4.6",
+      "name": "Headings and Labels",
+      "level": "AA",
+      "principle_num": "2",
+      "principle": "Operable",
+      "guideline_num": "2.4",
+      "guideline": "Navigable",
+      "added_in": "2.0",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "testability": "semi",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels.html",
+      "note": "Detect empty headings/labels; descriptiveness is manual."
+    },
+    {
+      "id": "SC2.4.7",
+      "num": "2.4.7",
+      "name": "Focus Visible",
+      "level": "AA",
+      "principle_num": "2",
+      "principle": "Operable",
+      "guideline_num": "2.4",
+      "guideline": "Navigable",
+      "added_in": "2.0",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "testability": "semi",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/focus-visible.html",
+      "note": "Detect outline:none patterns; visible-focus proof needs interaction."
+    },
+    {
+      "id": "SC2.4.8",
+      "num": "2.4.8",
+      "name": "Location",
+      "level": "AAA",
+      "principle_num": "2",
+      "principle": "Operable",
+      "guideline_num": "2.4",
+      "guideline": "Navigable",
+      "added_in": "2.0",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "testability": "manual",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/location.html",
+      "note": ""
+    },
+    {
+      "id": "SC2.4.9",
+      "num": "2.4.9",
+      "name": "Link Purpose (Link Only)",
+      "level": "AAA",
+      "principle_num": "2",
+      "principle": "Operable",
+      "guideline_num": "2.4",
+      "guideline": "Navigable",
+      "added_in": "2.0",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "testability": "semi",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-link-only.html",
+      "note": ""
+    },
+    {
+      "id": "SC2.4.10",
+      "num": "2.4.10",
+      "name": "Section Headings",
+      "level": "AAA",
+      "principle_num": "2",
+      "principle": "Operable",
+      "guideline_num": "2.4",
+      "guideline": "Navigable",
+      "added_in": "2.0",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "testability": "manual",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/section-headings.html",
+      "note": ""
+    },
+    {
+      "id": "SC2.4.11",
+      "num": "2.4.11",
+      "name": "Focus Not Obscured (Minimum)",
+      "level": "AA",
+      "principle_num": "2",
+      "principle": "Operable",
+      "guideline_num": "2.4",
+      "guideline": "Navigable",
+      "added_in": "2.2",
+      "versions": [
+        "2.2"
+      ],
+      "testability": "semi",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum.html",
+      "note": "Requires focusing each element and checking overlay occlusion."
+    },
+    {
+      "id": "SC2.4.12",
+      "num": "2.4.12",
+      "name": "Focus Not Obscured (Enhanced)",
+      "level": "AAA",
+      "principle_num": "2",
+      "principle": "Operable",
+      "guideline_num": "2.4",
+      "guideline": "Navigable",
+      "added_in": "2.2",
+      "versions": [
+        "2.2"
+      ],
+      "testability": "semi",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-enhanced.html",
+      "note": ""
+    },
+    {
+      "id": "SC2.4.13",
+      "num": "2.4.13",
+      "name": "Focus Appearance",
+      "level": "AAA",
+      "principle_num": "2",
+      "principle": "Operable",
+      "guideline_num": "2.4",
+      "guideline": "Navigable",
+      "added_in": "2.2",
+      "versions": [
+        "2.2"
+      ],
+      "testability": "semi",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/focus-appearance.html",
+      "note": "Focus indicator size/contrast partly measurable."
+    },
+    {
+      "id": "SC2.5.1",
+      "num": "2.5.1",
+      "name": "Pointer Gestures",
+      "level": "A",
+      "principle_num": "2",
+      "principle": "Operable",
+      "guideline_num": "2.5",
+      "guideline": "Input Modalities",
+      "added_in": "2.1",
+      "versions": [
+        "2.1",
+        "2.2"
+      ],
+      "testability": "manual",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/pointer-gestures.html",
+      "note": ""
+    },
+    {
+      "id": "SC2.5.2",
+      "num": "2.5.2",
+      "name": "Pointer Cancellation",
+      "level": "A",
+      "principle_num": "2",
+      "principle": "Operable",
+      "guideline_num": "2.5",
+      "guideline": "Input Modalities",
+      "added_in": "2.1",
+      "versions": [
+        "2.1",
+        "2.2"
+      ],
+      "testability": "manual",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/pointer-cancellation.html",
+      "note": ""
+    },
+    {
+      "id": "SC2.5.3",
+      "num": "2.5.3",
+      "name": "Label in Name",
+      "level": "A",
+      "principle_num": "2",
+      "principle": "Operable",
+      "guideline_num": "2.5",
+      "guideline": "Input Modalities",
+      "added_in": "2.1",
+      "versions": [
+        "2.1",
+        "2.2"
+      ],
+      "testability": "auto",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/label-in-name.html",
+      "note": "Compare visible label text vs accessible name programmatically."
+    },
+    {
+      "id": "SC2.5.4",
+      "num": "2.5.4",
+      "name": "Motion Actuation",
+      "level": "A",
+      "principle_num": "2",
+      "principle": "Operable",
+      "guideline_num": "2.5",
+      "guideline": "Input Modalities",
+      "added_in": "2.1",
+      "versions": [
+        "2.1",
+        "2.2"
+      ],
+      "testability": "manual",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/motion-actuation.html",
+      "note": ""
+    },
+    {
+      "id": "SC2.5.5",
+      "num": "2.5.5",
+      "name": "Target Size (Enhanced)",
+      "level": "AAA",
+      "principle_num": "2",
+      "principle": "Operable",
+      "guideline_num": "2.5",
+      "guideline": "Input Modalities",
+      "added_in": "2.1",
+      "versions": [
+        "2.1",
+        "2.2"
+      ],
+      "testability": "auto",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/target-size-enhanced.html",
+      "note": "Measure rendered target box vs 44x44 CSS px."
+    },
+    {
+      "id": "SC2.5.6",
+      "num": "2.5.6",
+      "name": "Concurrent Input Mechanisms",
+      "level": "AAA",
+      "principle_num": "2",
+      "principle": "Operable",
+      "guideline_num": "2.5",
+      "guideline": "Input Modalities",
+      "added_in": "2.1",
+      "versions": [
+        "2.1",
+        "2.2"
+      ],
+      "testability": "manual",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/concurrent-input-mechanisms.html",
+      "note": ""
+    },
+    {
+      "id": "SC2.5.7",
+      "num": "2.5.7",
+      "name": "Dragging Movements",
+      "level": "AA",
+      "principle_num": "2",
+      "principle": "Operable",
+      "guideline_num": "2.5",
+      "guideline": "Input Modalities",
+      "added_in": "2.2",
+      "versions": [
+        "2.2"
+      ],
+      "testability": "manual",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/dragging-movements.html",
+      "note": ""
+    },
+    {
+      "id": "SC2.5.8",
+      "num": "2.5.8",
+      "name": "Target Size (Minimum)",
+      "level": "AA",
+      "principle_num": "2",
+      "principle": "Operable",
+      "guideline_num": "2.5",
+      "guideline": "Input Modalities",
+      "added_in": "2.2",
+      "versions": [
+        "2.2"
+      ],
+      "testability": "auto",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html",
+      "note": "Measure rendered target box vs 24x24 CSS px + spacing exception."
+    },
+    {
+      "id": "SC3.1.1",
+      "num": "3.1.1",
+      "name": "Language of Page",
+      "level": "A",
+      "principle_num": "3",
+      "principle": "Understandable",
+      "guideline_num": "3.1",
+      "guideline": "Readable",
+      "added_in": "2.0",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "testability": "auto",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/language-of-page.html",
+      "note": "Presence/validity of <html lang> is checkable."
+    },
+    {
+      "id": "SC3.1.2",
+      "num": "3.1.2",
+      "name": "Language of Parts",
+      "level": "AA",
+      "principle_num": "3",
+      "principle": "Understandable",
+      "guideline_num": "3.1",
+      "guideline": "Readable",
+      "added_in": "2.0",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "testability": "semi",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/language-of-parts.html",
+      "note": ""
+    },
+    {
+      "id": "SC3.1.3",
+      "num": "3.1.3",
+      "name": "Unusual Words",
+      "level": "AAA",
+      "principle_num": "3",
+      "principle": "Understandable",
+      "guideline_num": "3.1",
+      "guideline": "Readable",
+      "added_in": "2.0",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "testability": "manual",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/unusual-words.html",
+      "note": ""
+    },
+    {
+      "id": "SC3.1.4",
+      "num": "3.1.4",
+      "name": "Abbreviations",
+      "level": "AAA",
+      "principle_num": "3",
+      "principle": "Understandable",
+      "guideline_num": "3.1",
+      "guideline": "Readable",
+      "added_in": "2.0",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "testability": "manual",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/abbreviations.html",
+      "note": ""
+    },
+    {
+      "id": "SC3.1.5",
+      "num": "3.1.5",
+      "name": "Reading Level",
+      "level": "AAA",
+      "principle_num": "3",
+      "principle": "Understandable",
+      "guideline_num": "3.1",
+      "guideline": "Readable",
+      "added_in": "2.0",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "testability": "semi",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/reading-level.html",
+      "note": "Readability scoring (Flesch etc.) is an indicator only."
+    },
+    {
+      "id": "SC3.1.6",
+      "num": "3.1.6",
+      "name": "Pronunciation",
+      "level": "AAA",
+      "principle_num": "3",
+      "principle": "Understandable",
+      "guideline_num": "3.1",
+      "guideline": "Readable",
+      "added_in": "2.0",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "testability": "manual",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/pronunciation.html",
+      "note": ""
+    },
+    {
+      "id": "SC3.2.1",
+      "num": "3.2.1",
+      "name": "On Focus",
+      "level": "A",
+      "principle_num": "3",
+      "principle": "Understandable",
+      "guideline_num": "3.2",
+      "guideline": "Predictable",
+      "added_in": "2.0",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "testability": "manual",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/on-focus.html",
+      "note": ""
+    },
+    {
+      "id": "SC3.2.2",
+      "num": "3.2.2",
+      "name": "On Input",
+      "level": "A",
+      "principle_num": "3",
+      "principle": "Understandable",
+      "guideline_num": "3.2",
+      "guideline": "Predictable",
+      "added_in": "2.0",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "testability": "manual",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/on-input.html",
+      "note": ""
+    },
+    {
+      "id": "SC3.2.3",
+      "num": "3.2.3",
+      "name": "Consistent Navigation",
+      "level": "AA",
+      "principle_num": "3",
+      "principle": "Understandable",
+      "guideline_num": "3.2",
+      "guideline": "Predictable",
+      "added_in": "2.0",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "testability": "semi",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/consistent-navigation.html",
+      "note": "Compare nav across crawled pages for order consistency."
+    },
+    {
+      "id": "SC3.2.4",
+      "num": "3.2.4",
+      "name": "Consistent Identification",
+      "level": "AA",
+      "principle_num": "3",
+      "principle": "Understandable",
+      "guideline_num": "3.2",
+      "guideline": "Predictable",
+      "added_in": "2.0",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "testability": "semi",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/consistent-identification.html",
+      "note": ""
+    },
+    {
+      "id": "SC3.2.5",
+      "num": "3.2.5",
+      "name": "Change on Request",
+      "level": "AAA",
+      "principle_num": "3",
+      "principle": "Understandable",
+      "guideline_num": "3.2",
+      "guideline": "Predictable",
+      "added_in": "2.0",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "testability": "manual",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/change-on-request.html",
+      "note": ""
+    },
+    {
+      "id": "SC3.2.6",
+      "num": "3.2.6",
+      "name": "Consistent Help",
+      "level": "A",
+      "principle_num": "3",
+      "principle": "Understandable",
+      "guideline_num": "3.2",
+      "guideline": "Predictable",
+      "added_in": "2.2",
+      "versions": [
+        "2.2"
+      ],
+      "testability": "semi",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/consistent-help.html",
+      "note": "Detect help mechanism presence/position across pages."
+    },
+    {
+      "id": "SC3.3.1",
+      "num": "3.3.1",
+      "name": "Error Identification",
+      "level": "A",
+      "principle_num": "3",
+      "principle": "Understandable",
+      "guideline_num": "3.3",
+      "guideline": "Input Assistance",
+      "added_in": "2.0",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "testability": "manual",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/error-identification.html",
+      "note": ""
+    },
+    {
+      "id": "SC3.3.2",
+      "num": "3.3.2",
+      "name": "Labels or Instructions",
+      "level": "A",
+      "principle_num": "3",
+      "principle": "Understandable",
+      "guideline_num": "3.3",
+      "guideline": "Input Assistance",
+      "added_in": "2.0",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "testability": "semi",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions.html",
+      "note": "Detect inputs without programmatic label."
+    },
+    {
+      "id": "SC3.3.3",
+      "num": "3.3.3",
+      "name": "Error Suggestion",
+      "level": "AA",
+      "principle_num": "3",
+      "principle": "Understandable",
+      "guideline_num": "3.3",
+      "guideline": "Input Assistance",
+      "added_in": "2.0",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "testability": "manual",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/error-suggestion.html",
+      "note": ""
+    },
+    {
+      "id": "SC3.3.4",
+      "num": "3.3.4",
+      "name": "Error Prevention (Legal, Financial, Data)",
+      "level": "AA",
+      "principle_num": "3",
+      "principle": "Understandable",
+      "guideline_num": "3.3",
+      "guideline": "Input Assistance",
+      "added_in": "2.0",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "testability": "manual",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/error-prevention-legal-financial-data.html",
+      "note": ""
+    },
+    {
+      "id": "SC3.3.5",
+      "num": "3.3.5",
+      "name": "Help",
+      "level": "AAA",
+      "principle_num": "3",
+      "principle": "Understandable",
+      "guideline_num": "3.3",
+      "guideline": "Input Assistance",
+      "added_in": "2.0",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "testability": "manual",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/help.html",
+      "note": ""
+    },
+    {
+      "id": "SC3.3.6",
+      "num": "3.3.6",
+      "name": "Error Prevention (All)",
+      "level": "AAA",
+      "principle_num": "3",
+      "principle": "Understandable",
+      "guideline_num": "3.3",
+      "guideline": "Input Assistance",
+      "added_in": "2.0",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "testability": "manual",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/error-prevention-all.html",
+      "note": ""
+    },
+    {
+      "id": "SC3.3.7",
+      "num": "3.3.7",
+      "name": "Redundant Entry",
+      "level": "A",
+      "principle_num": "3",
+      "principle": "Understandable",
+      "guideline_num": "3.3",
+      "guideline": "Input Assistance",
+      "added_in": "2.2",
+      "versions": [
+        "2.2"
+      ],
+      "testability": "manual",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/redundant-entry.html",
+      "note": ""
+    },
+    {
+      "id": "SC3.3.8",
+      "num": "3.3.8",
+      "name": "Accessible Authentication (Minimum)",
+      "level": "AA",
+      "principle_num": "3",
+      "principle": "Understandable",
+      "guideline_num": "3.3",
+      "guideline": "Input Assistance",
+      "added_in": "2.2",
+      "versions": [
+        "2.2"
+      ],
+      "testability": "semi",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/accessible-authentication-minimum.html",
+      "note": "Detect cognitive-function tests (e.g. CAPTCHA) heuristically."
+    },
+    {
+      "id": "SC3.3.9",
+      "num": "3.3.9",
+      "name": "Accessible Authentication (Enhanced)",
+      "level": "AAA",
+      "principle_num": "3",
+      "principle": "Understandable",
+      "guideline_num": "3.3",
+      "guideline": "Input Assistance",
+      "added_in": "2.2",
+      "versions": [
+        "2.2"
+      ],
+      "testability": "semi",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/accessible-authentication-enhanced.html",
+      "note": ""
+    },
+    {
+      "id": "SC4.1.1",
+      "num": "4.1.1",
+      "name": "Parsing (Obsolete in 2.2)",
+      "level": "A",
+      "principle_num": "4",
+      "principle": "Robust",
+      "guideline_num": "4.1",
+      "guideline": "Compatible",
+      "added_in": "2.0",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "testability": "auto",
+      "obsolete_in": "2.2",
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/parsing-obsolete-in-2.2.html",
+      "note": "Obsolete in WCAG 2.2 - always passes. Kept for 2.0/2.1 reports."
+    },
+    {
+      "id": "SC4.1.2",
+      "num": "4.1.2",
+      "name": "Name, Role, Value",
+      "level": "A",
+      "principle_num": "4",
+      "principle": "Robust",
+      "guideline_num": "4.1",
+      "guideline": "Compatible",
+      "added_in": "2.0",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "testability": "semi",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value.html",
+      "note": "Strong automation for missing names/roles; completeness is manual."
+    },
+    {
+      "id": "SC4.1.3",
+      "num": "4.1.3",
+      "name": "Status Messages",
+      "level": "AA",
+      "principle_num": "4",
+      "principle": "Robust",
+      "guideline_num": "4.1",
+      "guideline": "Compatible",
+      "added_in": "2.1",
+      "versions": [
+        "2.1",
+        "2.2"
+      ],
+      "testability": "manual",
+      "obsolete_in": null,
+      "understanding_url": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html",
+      "note": ""
+    }
+  ]
+}

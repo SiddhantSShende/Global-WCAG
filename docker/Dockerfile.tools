@@ -1,0 +1,45 @@
+# Worker image — the whole web pipeline in one place:
+#   Playwright + Chromium, Node accessibility engines, Go recon tools,
+#   LibreOffice (docx->pdf). Runs the Celery worker (prefork OK on Linux).
+FROM python:3.12-slim
+
+ENV PYTHONUNBUFFERED=1 PYTHONDONTWRITEBYTECODE=1 \
+    NODE_MAJOR=20 GO_VERSION=1.22.5 \
+    PATH="/usr/local/go/bin:/root/go/bin:${PATH}" \
+    THIRD_PARTY_DIR=/app/third_party
+
+WORKDIR /app
+
+# ── System deps: build tools, Postgres client libs, LibreOffice, fonts, curl ──
+RUN apt-get update && apt-get install -y --no-install-recommends \
+      build-essential libpq-dev curl ca-certificates gnupg git \
+      libreoffice-writer fonts-dejavu fonts-liberation \
+      chromium \
+ && rm -rf /var/lib/apt/lists/*
+# Lighthouse uses chrome-launcher, which needs a discoverable Chrome/Chromium.
+ENV CHROME_PATH=/usr/bin/chromium
+
+# ── Node.js (for axe/pa11y/lighthouse/IBM runners) ──
+RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
+ && apt-get install -y --no-install-recommends nodejs \
+ && rm -rf /var/lib/apt/lists/*
+
+# ── Go (to build the ProjectDiscovery recon tools) ──
+RUN curl -fsSL "https://go.dev/dl/go${GO_VERSION}.linux-amd64.tar.gz" -o /tmp/go.tgz \
+ && tar -C /usr/local -xzf /tmp/go.tgz && rm /tmp/go.tgz
+
+# ── Python deps ──
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# ── Playwright browser + OS deps ──
+RUN playwright install --with-deps chromium
+
+# ── Vendored tools: cloned + built at image-build time for reproducibility ──
+COPY scripts/setup_tools.sh scripts/setup_tools.sh
+RUN bash scripts/setup_tools.sh --docker
+
+COPY backend/ backend/
+COPY wcag_data/ wcag_data/
+
+CMD ["celery", "-A", "backend.app.worker.celery_app", "worker", "-l", "info", "--concurrency=2"]

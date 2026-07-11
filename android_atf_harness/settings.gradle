@@ -1,0 +1,16 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()        // Google's Maven — resolves current ATF via espresso-accessibility
+        mavenCentral()
+    }
+}
+rootProject.name = "a11y-atf-harness"
+include ':app'

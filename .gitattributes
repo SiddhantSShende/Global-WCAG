@@ -1,0 +1,19 @@
+# Keep LF endings so shell scripts and configs work in WSL2/Linux containers
+* text=auto eol=lf
+
+*.sh text eol=lf
+*.py text eol=lf
+*.mjs text eol=lf
+*.js text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+Dockerfile* text eol=lf
+
+# Binary assets — never normalize
+*.docx binary
+*.xlsx binary
+*.pdf binary
+*.png binary
+*.jpg binary
+*.ico binary

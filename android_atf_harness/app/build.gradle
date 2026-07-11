@@ -1,0 +1,39 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    namespace 'com.a11yaudit.harness'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId 'com.a11yaudit.harness'
+        minSdk 26
+        targetSdk 34
+        versionCode 1
+        versionName '1.0'
+        // AndroidJUnitRunner drives our instrumentation harness.
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    kotlinOptions { jvmTarget = '17' }
+}
+
+dependencies {
+    androidTestImplementation 'androidx.test.ext:junit:1.2.1'
+    androidTestImplementation 'androidx.test:runner:1.6.2'
+    androidTestImplementation 'androidx.test:rules:1.6.1'
+    androidTestImplementation 'androidx.test.uiautomator:uiautomator:2.3.0'
+
+    // Google Accessibility Test Framework (ATF). espresso-accessibility pulls the
+    // CURRENT ATF transitively from Google's Maven (the reliable way to get it —
+    // the standalone Central artifact lags). [re-verify] the exact resolved ATF
+    // version at build time and record it in third_party/VERSIONS.lock.
+    androidTestImplementation 'androidx.test.espresso:espresso-accessibility:3.6.1'
+    // If you prefer the standalone artifact, add (and verify it resolves):
+    // androidTestImplementation 'com.google.android.apps.common.testing.accessibility.framework:accessibility-test-framework:4.1.1'
+}

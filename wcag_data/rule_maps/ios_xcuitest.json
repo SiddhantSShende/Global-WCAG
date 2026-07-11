@@ -1,0 +1,22 @@
+{
+  "_meta": {
+    "engine": "Apple XCUITest performAccessibilityAudit() (iOS 17+/Xcode 15+)",
+    "source": "XCUIAccessibilityAuditType — the 7 documented audit types",
+    "provenance": "INFORMATIVE / vendor-derived. WCAG 2.x was authored for the web; these XCUIAccessibilityAuditType -> WCAG-SC mappings are this project's best-effort bridge (cf. W3C 'Mobile Accessibility'). NOT normative. Every returned audit issue is treated as a 'fail' finding; VoiceOver behaviour and everything the 7 audit types don't cover route to 'Needs Manual Review'.",
+    "note": "Keys starting with '_' are ignored by the normalizer. Appium returns the type in each issue; the normalizer matches either the short name (e.g. 'contrast') or the full 'XCUIAccessibilityAuditTypeContrast'."
+  },
+  "contrast": "1.4.3",
+  "elementDetection": "4.1.2",
+  "hitRegion": "2.5.8",
+  "sufficientElementDescription": "1.1.1",
+  "dynamicType": "1.4.4",
+  "textClipped": "1.4.10",
+  "trait": "4.1.2",
+  "_secondary": {
+    "contrast": ["1.4.6", "1.4.11"],
+    "hitRegion": ["2.5.5"],
+    "sufficientElementDescription": ["4.1.2"],
+    "dynamicType": ["1.4.4"],
+    "textClipped": ["1.4.4"]
+  }
+}

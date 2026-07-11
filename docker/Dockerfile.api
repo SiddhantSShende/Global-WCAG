@@ -1,0 +1,26 @@
+# ── Stage 1: build the React (Vite) frontend ──
+FROM node:20-slim AS ui
+WORKDIR /ui
+COPY frontend/package.json ./
+RUN npm install --no-audit --no-fund
+COPY frontend/ ./
+RUN npm run build
+
+# ── Stage 2: API service (serves the built UI + REST) ──
+FROM python:3.12-slim
+ENV PYTHONUNBUFFERED=1 PYTHONDONTWRITEBYTECODE=1 USE_CELERY=true
+WORKDIR /app
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential libpq-dev \
+ && rm -rf /var/lib/apt/lists/*
+
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY backend/ backend/
+COPY wcag_data/ wcag_data/
+COPY --from=ui /ui/dist frontend/dist
+
+EXPOSE 8000
+CMD ["uvicorn", "backend.app.main:app", "--host", "0.0.0.0", "--port", "8000"]

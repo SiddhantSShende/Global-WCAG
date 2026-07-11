@@ -1,0 +1,364 @@
+{
+    "results": [
+        {
+            "ruleId": "html_lang_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_3",
+            "message": "Page detected as HTML, but does not have a 'lang' attribute",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 0,
+                "height": 203,
+                "width": 800
+            },
+            "snippet": "<html>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/html_lang_exists.html#%7B%22message%22%3A%22Page%20detected%20as%20HTML%2C%20but%20does%20not%20have%20a%20'lang'%20attribute%22%2C%22snippet%22%3A%22%3Chtml%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_3%22%2C%22ruleId%22%3A%22html_lang_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "skip_main_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 22,
+                "height": 174,
+                "width": 784
+            },
+            "snippet": "<body style=\"background:#ffffff\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/skip_main_exists.html#%7B%22message%22%3A%22The%20page%20does%20not%20provide%20a%20way%20to%20quickly%20navigate%20to%20the%20main%20content%20(ARIA%20%5C%22main%5C%22%20landmark%20or%20a%20skip%20link)%22%2C%22snippet%22%3A%22%3Cbody%20style%3D%5C%22background%3A%23ffffff%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22skip_main_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "style_color_misuse",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]",
+                "aria": "/document[1]"
+            },
+            "ruleTime": 1,
+            "reasonId": "Potential_1",
+            "message": "Verify color is not used as the only visual means of conveying information",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 22,
+                "height": 174,
+                "width": 784
+            },
+            "snippet": "<body style=\"background:#ffffff\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/style_color_misuse.html#%7B%22message%22%3A%22Verify%20color%20is%20not%20used%20as%20the%20only%20visual%20means%20of%20conveying%20information%22%2C%22snippet%22%3A%22%3Cbody%20style%3D%5C%22background%3A%23ffffff%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22style_color_misuse%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_content_in_landmark",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/h1[1]",
+                "aria": "/document[1]/heading[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Content is not within a landmark element",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 22,
+                "height": 37,
+                "width": 784
+            },
+            "snippet": "<h1>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_content_in_landmark.html#%7B%22message%22%3A%22Content%20is%20not%20within%20a%20landmark%20element%22%2C%22snippet%22%3A%22%3Ch1%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_content_in_landmark%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "img_alt_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/img[1]",
+                "aria": "/document[1]/img[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_no_alt",
+            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 80,
+                "height": 40,
+                "width": 80
+            },
+            "snippet": "<img height=\"40\" width=\"80\" src=\"data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20height%3D%5C%2240%5C%22%20width%3D%5C%2280%5C%22%20src%3D%5C%22data%3Aimage%2Fgif%3Bbase64%2CR0lGODlhAQABAAAAACwAAAAAAQABAAA%3D%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/p[1]",
+                "aria": "/document[1]/paragraph[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 2.32 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "2.32",
+                16,
+                400,
+                "#aaaaaa",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 140,
+                "height": 18,
+                "width": 784
+            },
+            "snippet": "<p style=\"color:#aaaaaa;background:#ffffff\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%202.32%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Cp%20style%3D%5C%22color%3A%23aaaaaa%3Bbackground%3A%23ffffff%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%222.32%22%2C16%2C400%2C%22%23aaaaaa%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/a[1]",
+                "aria": "/document[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 175,
+                "height": 17,
+                "width": 0
+            },
+            "snippet": "<a href=\"https://example.com\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fexample.com%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "a_text_purpose",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/a[1]",
+                "aria": "/document[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_acc_name",
+            "message": "Hyperlink has no link text, label or image with a text alternative",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 175,
+                "height": 17,
+                "width": 0
+            },
+            "snippet": "<a href=\"https://example.com\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fexample.com%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/button[1]",
+                "aria": "/document[1]/button[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <button> has no associated label",
+            "messageArgs": [
+                "button"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 8,
+                "top": 186,
+                "height": 6,
+                "width": 16
+            },
+            "snippet": "<button>",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cbutton%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cbutton%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22button%22%5D%7D"
+        },
+        {
+            "ruleId": "input_label_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/input[1]",
+                "aria": "/document[1]/textbox[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Form control element <input> has no associated label",
+            "messageArgs": [
+                "input"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 28,
+                "top": 174,
+                "height": 21,
+                "width": 177
+            },
+            "snippet": "<input type=\"text\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cinput%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cinput%20type%3D%5C%22text%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        }
+    ],
+    "numExecuted": 72,
+    "ruleTime": 5,
+    "nls": {
+        "html_lang_exists": {
+            "0": "Page must identify the default language of the document with a 'lang' attribute",
+            "Fail_3": "Page detected as HTML, but does not have a 'lang' attribute"
+        },
+        "aria_content_in_landmark": {
+            "0": "All content must reside within an element with a landmark role",
+            "Fail_1": "Content is not within a landmark element"
+        },
+        "skip_main_exists": {
+            "0": "Pages must provide a way to skip directly to the main content",
+            "Fail_1": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)"
+        },
+        "style_color_misuse": {
+            "0": "Combine color and descriptive markup to convey information",
+            "Potential_1": "Verify color is not used as the only visual means of conveying information"
+        },
+        "text_contrast_sufficient": {
+            "0": "The contrast ratio of text with its background must meet WCAG AA requirements",
+            "fail_contrast": "Text contrast of {0} with its background is less than the WCAG AA minimum requirements for text of size {1}px and weight of {2}"
+        },
+        "img_alt_valid": {
+            "0": "Images must have accessible names unless they are decorative or redundant",
+            "fail_no_alt": "The image has neither an accessible name nor is marked as decorative or redundant"
+        },
+        "element_tabbable_visible": {
+            "0": "A tabbable element should be visible on the screen when it has keyboard focus",
+            "potential_visible": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus"
+        },
+        "a_text_purpose": {
+            "0": "Hyperlinks must have an accessible name for their purpose",
+            "fail_acc_name": "Hyperlink has no link text, label or image with a text alternative"
+        },
+        "input_label_exists": {
+            "0": "Each form control must have an associated label",
+            "Fail_1": "Form control element <{0}> has no associated label"
+        }
+    },
+    "summary": {
+        "counts": {
+            "ignored": 0,
+            "elements": 8,
+            "elementsViolation": 8,
+            "elementsViolationReview": 8,
+            "violation": 8,
+            "potentialviolation": 2,
+            "recommendation": 0,
+            "potentialrecommendation": 0,
+            "manual": 1,
+            "pass": 61
+        },
+        "scanTime": 22,
+        "ruleArchive": "Latest Deployment (latest)",
+        "policies": [
+            "IBM_Accessibility"
+        ],
+        "reportLevels": [
+            "violation",
+            "potentialviolation"
+        ],
+        "startScan": 1783803071649,
+        "URL": "http://127.0.0.1:8099/"
+    },
+    "scanID": "c683a05e-1893-4df3-b9ad-995a47dba80c",
+    "toolID": "accessibility-checker-v3.1.82",
+    "label": "a11y-audit"
+}

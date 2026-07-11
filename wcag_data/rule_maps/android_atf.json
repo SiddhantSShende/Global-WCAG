@@ -1,0 +1,29 @@
+{
+  "_meta": {
+    "engine": "Google Accessibility Test Framework for Android (ATF)",
+    "source": "AccessibilityCheckPreset.java — the 14 AccessibilityHierarchyCheck classes",
+    "provenance": "INFORMATIVE / vendor-derived. WCAG 2.x was authored for the web; ATF-check -> WCAG-SC mappings are this project's best-effort bridge (cf. W3C 'Mobile Accessibility: How WCAG Applies to Mobile'). They are NOT normative. Only ATF results at severity ERROR become 'fail' findings; WARNING/INFO and all screen-reader-dependent behaviour route to 'Needs Manual Review' (TalkBack pass).",
+    "note": "Keys starting with '_' are ignored by the normalizer. Some checks map to multiple SCs; the PRIMARY SC is used for the row, others noted in _secondary."
+  },
+  "SpeakableTextPresentCheck": "1.1.1",
+  "EditableContentDescCheck": "4.1.2",
+  "TouchTargetSizeCheck": "2.5.8",
+  "DuplicateSpeakableTextCheck": "4.1.2",
+  "TextContrastCheck": "1.4.3",
+  "ClickableSpanCheck": "4.1.2",
+  "DuplicateClickableBoundsCheck": "4.1.2",
+  "RedundantDescriptionCheck": "1.1.1",
+  "ImageContrastCheck": "1.4.3",
+  "ClassNameCheck": "4.1.2",
+  "TraversalOrderCheck": "1.3.2",
+  "LinkPurposeUnclearCheck": "2.4.4",
+  "TextSizeCheck": "1.4.4",
+  "UnexposedTextCheck": "1.1.1",
+  "_secondary": {
+    "TouchTargetSizeCheck": ["2.5.5"],
+    "TextContrastCheck": ["1.4.6"],
+    "ImageContrastCheck": ["1.4.11"],
+    "TraversalOrderCheck": ["2.4.3"],
+    "SpeakableTextPresentCheck": ["4.1.2"]
+  }
+}
