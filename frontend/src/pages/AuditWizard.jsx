@@ -27,6 +27,18 @@ function activePhase(step, status) {
   return 0;
 }
 
+// Normalize anything a user might type/paste (bare host, *.wildcard, host:port,
+// or a full URL) down to a bare hostname — mirrors backend subdomains._bare_host.
+function bareHost(value) {
+  const v = (value || "").trim().toLowerCase();
+  if (!v) return "";
+  try {
+    return new URL(v.includes("://") ? v : `https://${v}`).hostname;
+  } catch {
+    return v.split("/")[0].split("@").pop().replace(/^\*\./, "").split(":")[0];
+  }
+}
+
 function groupReports(reports) {
   const groups = {};
   for (const r of reports || []) {
@@ -52,21 +64,38 @@ export default function AuditWizard() {
   const [job, setJob] = useState(null);
   const [reports, setReports] = useState(null);
   const [busy, setBusy] = useState(false);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     if (!jobId) return;
     let alive = true;
+    let fails = 0;
     const tick = async () => {
-      const { data } = await api("/jobs/" + jobId);
+      const res = await api("/jobs/" + jobId);
       if (!alive) return;
-      if (data) {
+      if (res.ok && res.data && res.data.status) {
+        fails = 0;
+        const data = res.data;
         setJob(data);
         if (data.status === "done") {
           const r = await api("/jobs/" + jobId + "/reports");
-          if (alive) { setReports(r.data?.reports || []); setBusy(false); }
+          if (!alive) return;
+          if (r.ok) setReports(r.data?.reports || []);
+          else setError("The audit finished, but its reports couldn't be loaded — "
+                        + (r.data?.detail || `HTTP ${r.status}`));
+          setBusy(false);
           return;
         }
         if (data.status === "error") { setBusy(false); return; }
+      } else {
+        // Non-OK response or unreachable backend: never spin forever.
+        fails += 1;
+        if (fails >= 5) {
+          setError(res.data?.detail
+                   || `Lost contact with the server (HTTP ${res.status}). Is the audit API running?`);
+          setBusy(false);
+          return;
+        }
       }
       setTimeout(tick, 2000);
     };
@@ -76,13 +105,16 @@ export default function AuditWizard() {
 
   async function submit(e) {
     e.preventDefault();
-    setBusy(true); setReports(null); setJob(null);
+    setBusy(true); setReports(null); setJob(null); setError(null);
     const body = { target_type: ttype };
     if (ttype === "web") {
       body.target_ref = form.url.trim();
       body.authorized = form.authorized;
-      body.scope_allowlist = form.allow.split(",").map((x) => x.trim()).filter(Boolean);
-      if (!body.scope_allowlist.length) { try { body.scope_allowlist = [new URL(body.target_ref).hostname]; } catch { /* noop */ } }
+      // URL-only flow: the entered site's own host is always in scope; the
+      // optional field only ADDS extra subdomains. Dedupe + normalize.
+      const targetHost = bareHost(body.target_ref);
+      const extras = form.allow.split(",").map(bareHost).filter(Boolean);
+      body.scope_allowlist = [...new Set([targetHost, ...extras].filter(Boolean))];
       if (form.user || form.pass) body.inputs = { login_url: form.loginUrl.trim() || undefined, credentials: { username: form.user, password: form.pass } };
     } else {
       body.target_ref = form.appref.trim() || "app";
@@ -147,12 +179,18 @@ export default function AuditWizard() {
                     <label htmlFor="url">Domain URL</label>
                     <input id="url" type="url" value={form.url} onChange={set("url")} placeholder="https://example.com" />
                   </div>
-                  <div className="field">
-                    <label htmlFor="allow">In-scope hosts</label>
-                    <input id="allow" type="text" value={form.allow} onChange={set("allow")} placeholder="example.com, app.example.com" />
-                    <p className="hint">Discovery is deny-by-default — we only touch hosts you list here.</p>
-                  </div>
-                  <label className="check">
+                  <p className="hint" style={{ marginTop: ".4rem" }}>
+                    That's all we need — we audit the site at this URL. Add extra subdomains below only if you want them included too.</p>
+                  <details style={{ marginTop: ".9rem" }}>
+                    <summary style={{ cursor: "pointer", fontWeight: 650, fontSize: ".9rem", color: "var(--text-muted)" }}>
+                      Additional in-scope subdomains (optional)</summary>
+                    <div className="field" style={{ marginTop: ".75rem" }}>
+                      <label htmlFor="allow">Extra in-scope hosts</label>
+                      <input id="allow" type="text" value={form.allow} onChange={set("allow")} placeholder="app.example.com, docs.example.com" />
+                      <p className="hint">Leave blank to audit just the site above. Discovery stays deny-by-default — we never touch a host that isn't the target or explicitly listed here.</p>
+                    </div>
+                  </details>
+                  <label className="check" style={{ marginTop: "1rem" }}>
                     <input type="checkbox" checked={form.authorized} onChange={set("authorized")} />
                     <span>I attest I own, or am authorized to test, this domain.</span>
                   </label>
@@ -208,7 +246,21 @@ export default function AuditWizard() {
             </Card>
           )}
 
-          {reports && (
+          {error && (
+            <Card pad="lg">
+              <SectionTitle num="!">Something went wrong</SectionTitle>
+              <p className="badge st-fail" style={{ margin: 0 }}>{error}</p>
+            </Card>
+          )}
+
+          {reports && Object.keys(groups).length === 0 && !error && (
+            <Card pad="lg">
+              <p className="muted" style={{ margin: 0 }}>
+                The audit completed but produced no downloadable reports. Check the job status above.</p>
+            </Card>
+          )}
+
+          {reports && Object.keys(groups).length > 0 && (
             <Card pad="lg">
               <div className="row" style={{ justifyContent: "space-between" }}>
                 <div className="section-title" style={{ margin: 0 }}>

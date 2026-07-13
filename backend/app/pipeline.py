@@ -62,9 +62,15 @@ def _run_web(job: dict) -> None:
                                allow_active=job.get("allow_active", False))
     live = disc["live"]
     if not live:
-        db.update_job(job_id, status="error",
-                      error_detail="No live, in-scope hosts. Check the domain and "
-                                   "that the scope allowlist includes it.")
+        discovered = disc.get("discovered") or []
+        oos = disc.get("out_of_scope") or []
+        detail = ("No live, in-scope hosts were reachable. Check that the website "
+                  "URL is correct and publicly reachable.")
+        if discovered:
+            detail += f" Discovered host(s): {', '.join(discovered[:10])}."
+        if oos:
+            detail += f" Out of scope (not audited): {', '.join(oos[:10])}."
+        db.update_job(job_id, status="error", error_detail=detail)
         return
 
     # ── Optional authenticated session (vaulted credentials) ──

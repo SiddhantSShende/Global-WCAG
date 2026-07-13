@@ -3,6 +3,7 @@ from __future__ import annotations
 
 from contextlib import asynccontextmanager
 from pathlib import Path
+from urllib.parse import urlparse
 
 from fastapi import Depends, FastAPI, HTTPException
 from fastapi.responses import FileResponse, Response
@@ -79,9 +80,15 @@ def create_job(req: CreateJobRequest, actor: dict = Depends(require_role("operat
             raise HTTPException(400, "Web scans require an authorization attestation "
                                      "that you own or are permitted to test the target.")
         if not req.scope_allowlist:
-            raise HTTPException(400, "A scope allowlist is required — discovery is "
-                                     "deny-by-default; we never touch a host that "
-                                     "isn't explicitly in scope.")
+            # URL-only flow: the entered target host IS the scope. Derive it so a
+            # plain URL is always a valid request. Discovery stays deny-by-default
+            # for every OTHER subdomain — only the target itself is auto-in-scope.
+            ref = (req.target_ref or "").strip()
+            host = (urlparse(ref if "://" in ref else f"https://{ref}").hostname or "").strip()
+            if not host:
+                raise HTTPException(400, "Enter a valid website URL to audit "
+                                         "(for example https://example.com).")
+            req.scope_allowlist = [host]
     elif req.target_type in (TargetType.android, TargetType.ios):
         if not req.authorized:
             raise HTTPException(400, "Mobile scans require an attestation that you own "

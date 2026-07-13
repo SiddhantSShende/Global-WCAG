@@ -1,88 +1,470 @@
 {
     "results": [
         {
-            "ruleId": "html_lang_exists",
-            "value": [
-                "VIOLATION",
-                "FAIL"
-            ],
-            "path": {
-                "dom": "/html[1]",
-                "aria": "/document[1]"
-            },
-            "ruleTime": 0,
-            "reasonId": "Fail_3",
-            "message": "Page detected as HTML, but does not have a 'lang' attribute",
-            "messageArgs": [],
-            "apiArgs": [],
-            "bounds": {
-                "left": 0,
-                "top": 0,
-                "height": 203,
-                "width": 800
-            },
-            "snippet": "<html>",
-            "source": null,
-            "category": "Accessibility",
-            "level": "violation",
-            "ignored": false,
-            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/html_lang_exists.html#%7B%22message%22%3A%22Page%20detected%20as%20HTML%2C%20but%20does%20not%20have%20a%20'lang'%20attribute%22%2C%22snippet%22%3A%22%3Chtml%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_3%22%2C%22ruleId%22%3A%22html_lang_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
-        },
-        {
-            "ruleId": "skip_main_exists",
-            "value": [
-                "VIOLATION",
-                "FAIL"
-            ],
-            "path": {
-                "dom": "/html[1]/body[1]",
-                "aria": "/document[1]"
-            },
-            "ruleTime": 0,
-            "reasonId": "Fail_1",
-            "message": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)",
-            "messageArgs": [],
-            "apiArgs": [],
-            "bounds": {
-                "left": 8,
-                "top": 22,
-                "height": 174,
-                "width": 784
-            },
-            "snippet": "<body style=\"background:#ffffff\">",
-            "source": null,
-            "category": "Accessibility",
-            "level": "violation",
-            "ignored": false,
-            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/skip_main_exists.html#%7B%22message%22%3A%22The%20page%20does%20not%20provide%20a%20way%20to%20quickly%20navigate%20to%20the%20main%20content%20(ARIA%20%5C%22main%5C%22%20landmark%20or%20a%20skip%20link)%22%2C%22snippet%22%3A%22%3Cbody%20style%3D%5C%22background%3A%23ffffff%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22skip_main_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
-        },
-        {
             "ruleId": "style_color_misuse",
             "value": [
                 "VIOLATION",
                 "POTENTIAL"
             ],
             "path": {
-                "dom": "/html[1]/body[1]",
+                "dom": "/html[1]/head[1]/style[2]",
                 "aria": "/document[1]"
             },
-            "ruleTime": 1,
+            "ruleTime": 0,
             "reasonId": "Potential_1",
             "message": "Verify color is not used as the only visual means of conveying information",
             "messageArgs": [],
             "apiArgs": [],
             "bounds": {
-                "left": 8,
-                "top": 22,
-                "height": 174,
-                "width": 784
+                "left": 0,
+                "top": 0,
+                "height": 0,
+                "width": 0
             },
-            "snippet": "<body style=\"background:#ffffff\">",
+            "snippet": "<style id=\"wp-emoji-styles-inline-css\">",
             "source": null,
             "category": "Accessibility",
             "level": "potentialviolation",
             "ignored": false,
-            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/style_color_misuse.html#%7B%22message%22%3A%22Verify%20color%20is%20not%20used%20as%20the%20only%20visual%20means%20of%20conveying%20information%22%2C%22snippet%22%3A%22%3Cbody%20style%3D%5C%22background%3A%23ffffff%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22style_color_misuse%22%2C%22msgArgs%22%3A%5B%5D%7D"
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/style_color_misuse.html#%7B%22message%22%3A%22Verify%20color%20is%20not%20used%20as%20the%20only%20visual%20means%20of%20conveying%20information%22%2C%22snippet%22%3A%22%3Cstyle%20id%3D%5C%22wp-emoji-styles-inline-css%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22style_color_misuse%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_complementary_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/header[1]/div[1]/div[2]/aside[1]",
+                "aria": "/document[1]/banner[1]/complementary[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Element with \"complementary\" role does not have a label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 404,
+                "top": 39,
+                "height": 56,
+                "width": 215
+            },
+            "snippet": "<aside class=\"widget inner-padding widget_block\" id=\"block-13\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_complementary_labelled.html#%7B%22message%22%3A%22Element%20with%20%5C%22complementary%5C%22%20role%20does%20not%20have%20a%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_block%5C%22%20id%3D%5C%22block-13%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_complementary_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_landmark_name_unique",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/header[1]/div[1]/div[2]/aside[1]",
+                "aria": "/document[1]/banner[1]/complementary[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_label_not_unique",
+            "message": "Multiple elements with \"complementary\" landmarks within the same parent region are not distinguished from one another because they have the same \"\" label",
+            "messageArgs": [
+                "complementary",
+                ""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 404,
+                "top": 39,
+                "height": 56,
+                "width": 215
+            },
+            "snippet": "<aside class=\"widget inner-padding widget_block\" id=\"block-13\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_landmark_name_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22complementary%5C%22%20landmarks%20within%20the%20same%20parent%20region%20are%20not%20distinguished%20from%20one%20another%20because%20they%20have%20the%20same%20%5C%22%5C%22%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_block%5C%22%20id%3D%5C%22block-13%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_landmark_name_unique%22%2C%22msgArgs%22%3A%5B%22complementary%22%2C%22%22%5D%7D"
+        },
+        {
+            "ruleId": "aria_complementary_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/header[1]/div[1]/div[2]/aside[2]",
+                "aria": "/document[1]/banner[1]/complementary[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Element with \"complementary\" role does not have a label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 619,
+                "top": 38,
+                "height": 43,
+                "width": 162
+            },
+            "snippet": "<aside class=\"widget inner-padding widget_block\" id=\"block-12\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_complementary_labelled.html#%7B%22message%22%3A%22Element%20with%20%5C%22complementary%5C%22%20role%20does%20not%20have%20a%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_block%5C%22%20id%3D%5C%22block-12%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_complementary_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_landmark_name_unique",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/header[1]/div[1]/div[2]/aside[2]",
+                "aria": "/document[1]/banner[1]/complementary[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_label_not_unique",
+            "message": "Multiple elements with \"complementary\" landmarks within the same parent region are not distinguished from one another because they have the same \"\" label",
+            "messageArgs": [
+                "complementary",
+                ""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 619,
+                "top": 38,
+                "height": 43,
+                "width": 162
+            },
+            "snippet": "<aside class=\"widget inner-padding widget_block\" id=\"block-12\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_landmark_name_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22complementary%5C%22%20landmarks%20within%20the%20same%20parent%20region%20are%20not%20distinguished%20from%20one%20another%20because%20they%20have%20the%20same%20%5C%22%5C%22%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_block%5C%22%20id%3D%5C%22block-12%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_landmark_name_unique%22%2C%22msgArgs%22%3A%5B%22complementary%22%2C%22%22%5D%7D"
+        },
+        {
+            "ruleId": "style_focus_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/header[1]/div[1]/div[2]/aside[2]/div[1]/div[1]/a[1]",
+                "aria": "/document[1]/banner[1]/complementary[2]/link[1]"
+            },
+            "ruleTime": 10,
+            "reasonId": "potential_focus_not_visible",
+            "message": "Check the keyboard focus indicator is visible when using CSS declaration for 'border' or 'outline'",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 649,
+                "top": 38,
+                "height": 43,
+                "width": 132
+            },
+            "snippet": "<a href=\"/wps/contact-us\" class=\"wp-block-button__link wp-element-button\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/style_focus_visible.html#%7B%22message%22%3A%22Check%20the%20keyboard%20focus%20indicator%20is%20visible%20when%20using%20CSS%20declaration%20for%20'border'%20or%20'outline'%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22%2Fwps%2Fcontact-us%5C%22%20class%3D%5C%22wp-block-button__link%20wp-element-button%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_focus_not_visible%22%2C%22ruleId%22%3A%22style_focus_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/header[1]/div[1]/div[2]/aside[2]/div[1]/div[1]/a[1]",
+                "aria": "/document[1]/banner[1]/complementary[2]/link[1]"
+            },
+            "ruleTime": 1,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 2.90 with its background is less than the WCAG AA minimum requirements for text of size 14px and weight of 500",
+            "messageArgs": [
+                "2.90",
+                14,
+                500,
+                "#f2f4f8",
+                "#45a342",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 649,
+                "top": 38,
+                "height": 43,
+                "width": 132
+            },
+            "snippet": "<a href=\"/wps/contact-us\" class=\"wp-block-button__link wp-element-button\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%202.90%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2014px%20and%20weight%20of%20500%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22%2Fwps%2Fcontact-us%5C%22%20class%3D%5C%22wp-block-button__link%20wp-element-button%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%222.90%22%2C14%2C500%2C%22%23f2f4f8%22%2C%22%2345a342%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/nav[2]/div[1]/div[1]/ul[1]/li[3]/ul[1]/li[1]/a[1]",
+                "aria": "/document[1]/navigation[2]/list[1]/listitem[3]/list[1]/listitem[1]/link[1]"
+            },
+            "ruleTime": 3,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": -99768,
+                "top": 157,
+                "height": 56,
+                "width": 300
+            },
+            "snippet": "<a href=\"https://www.ampersand-cap.com/ampersand-growth-opportunities-fund-scheme-agofs-1/\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.ampersand-cap.com%2Fampersand-growth-opportunities-fund-scheme-agofs-1%2F%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/nav[2]/div[1]/div[1]/ul[1]/li[3]/ul[1]/li[1]/a[1]",
+                "aria": "/document[1]/navigation[2]/list[1]/listitem[3]/list[1]/listitem[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_same_color",
+            "message": "The foreground text and its background color are both detected as #ffffff. Verify the text meets the WCAG AA requirements for minimum contrast",
+            "messageArgs": [
+                "1.00",
+                14,
+                600,
+                "#ffffff",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": -99768,
+                "top": 157,
+                "height": 56,
+                "width": 300
+            },
+            "snippet": "<a href=\"https://www.ampersand-cap.com/ampersand-growth-opportunities-fund-scheme-agofs-1/\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22The%20foreground%20text%20and%20its%20background%20color%20are%20both%20detected%20as%20%23ffffff.%20Verify%20the%20text%20meets%20the%20WCAG%20AA%20requirements%20for%20minimum%20contrast%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.ampersand-cap.com%2Fampersand-growth-opportunities-fund-scheme-agofs-1%2F%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_same_color%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%221.00%22%2C14%2C600%2C%22%23ffffff%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/nav[2]/div[1]/div[1]/ul[1]/li[4]/ul[1]/li[1]/a[1]",
+                "aria": "/document[1]/navigation[2]/list[1]/listitem[4]/list[1]/listitem[1]/link[1]"
+            },
+            "ruleTime": 4,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": -99569,
+                "top": 157,
+                "height": 38,
+                "width": 300
+            },
+            "snippet": "<a href=\"https://www.ampersand-cap.com/category/monthly-updates/\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.ampersand-cap.com%2Fcategory%2Fmonthly-updates%2F%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/nav[2]/div[1]/div[1]/ul[1]/li[4]/ul[1]/li[1]/a[1]",
+                "aria": "/document[1]/navigation[2]/list[1]/listitem[4]/list[1]/listitem[1]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_same_color",
+            "message": "The foreground text and its background color are both detected as #ffffff. Verify the text meets the WCAG AA requirements for minimum contrast",
+            "messageArgs": [
+                "1.00",
+                14,
+                600,
+                "#ffffff",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": -99569,
+                "top": 157,
+                "height": 38,
+                "width": 300
+            },
+            "snippet": "<a href=\"https://www.ampersand-cap.com/category/monthly-updates/\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22The%20foreground%20text%20and%20its%20background%20color%20are%20both%20detected%20as%20%23ffffff.%20Verify%20the%20text%20meets%20the%20WCAG%20AA%20requirements%20for%20minimum%20contrast%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.ampersand-cap.com%2Fcategory%2Fmonthly-updates%2F%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_same_color%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%221.00%22%2C14%2C600%2C%22%23ffffff%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/nav[2]/div[1]/div[1]/ul[1]/li[4]/ul[1]/li[2]/a[1]",
+                "aria": "/document[1]/navigation[2]/list[1]/listitem[4]/list[1]/listitem[2]/link[1]"
+            },
+            "ruleTime": 1,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": -99569,
+                "top": 195,
+                "height": 38,
+                "width": 300
+            },
+            "snippet": "<a href=\"https://www.ampersand-cap.com/category/blog/\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.ampersand-cap.com%2Fcategory%2Fblog%2F%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/nav[2]/div[1]/div[1]/ul[1]/li[4]/ul[1]/li[2]/a[1]",
+                "aria": "/document[1]/navigation[2]/list[1]/listitem[4]/list[1]/listitem[2]/link[1]"
+            },
+            "ruleTime": 1,
+            "reasonId": "potential_same_color",
+            "message": "The foreground text and its background color are both detected as #ffffff. Verify the text meets the WCAG AA requirements for minimum contrast",
+            "messageArgs": [
+                "1.00",
+                14,
+                600,
+                "#ffffff",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": -99569,
+                "top": 195,
+                "height": 38,
+                "width": 300
+            },
+            "snippet": "<a href=\"https://www.ampersand-cap.com/category/blog/\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22The%20foreground%20text%20and%20its%20background%20color%20are%20both%20detected%20as%20%23ffffff.%20Verify%20the%20text%20meets%20the%20WCAG%20AA%20requirements%20for%20minimum%20contrast%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.ampersand-cap.com%2Fcategory%2Fblog%2F%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_same_color%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%221.00%22%2C14%2C600%2C%22%23ffffff%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "element_tabbable_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/nav[2]/div[1]/div[1]/ul[1]/li[4]/ul[1]/li[3]/a[1]",
+                "aria": "/document[1]/navigation[2]/list[1]/listitem[4]/list[1]/listitem[3]/link[1]"
+            },
+            "ruleTime": 1,
+            "reasonId": "potential_visible",
+            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": -99569,
+                "top": 233,
+                "height": 38,
+                "width": 300
+            },
+            "snippet": "<a href=\"https://www.ampersand-cap.com/videos/\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.ampersand-cap.com%2Fvideos%2F%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/nav[2]/div[1]/div[1]/ul[1]/li[4]/ul[1]/li[3]/a[1]",
+                "aria": "/document[1]/navigation[2]/list[1]/listitem[4]/list[1]/listitem[3]/link[1]"
+            },
+            "ruleTime": 1,
+            "reasonId": "potential_same_color",
+            "message": "The foreground text and its background color are both detected as #ffffff. Verify the text meets the WCAG AA requirements for minimum contrast",
+            "messageArgs": [
+                "1.00",
+                14,
+                600,
+                "#ffffff",
+                "#ffffff",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": -99569,
+                "top": 233,
+                "height": 38,
+                "width": 300
+            },
+            "snippet": "<a href=\"https://www.ampersand-cap.com/videos/\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22The%20foreground%20text%20and%20its%20background%20color%20are%20both%20detected%20as%20%23ffffff.%20Verify%20the%20text%20meets%20the%20WCAG%20AA%20requirements%20for%20minimum%20contrast%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.ampersand-cap.com%2Fvideos%2F%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_same_color%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%221.00%22%2C14%2C600%2C%22%23ffffff%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
         },
         {
             "ruleId": "aria_content_in_landmark",
@@ -91,7 +473,7 @@
                 "FAIL"
             ],
             "path": {
-                "dom": "/html[1]/body[1]/h1[1]",
+                "dom": "/html[1]/body[1]/div[1]/div[1]/h1[1]",
                 "aria": "/document[1]/heading[1]"
             },
             "ruleTime": 0,
@@ -100,10 +482,10 @@
             "messageArgs": [],
             "apiArgs": [],
             "bounds": {
-                "left": 8,
-                "top": 22,
-                "height": 37,
-                "width": 784
+                "left": 20,
+                "top": 367,
+                "height": 60,
+                "width": 760
             },
             "snippet": "<h1>",
             "source": null,
@@ -113,32 +495,68 @@
             "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_content_in_landmark.html#%7B%22message%22%3A%22Content%20is%20not%20within%20a%20landmark%20element%22%2C%22snippet%22%3A%22%3Ch1%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_content_in_landmark%22%2C%22msgArgs%22%3A%5B%5D%7D"
         },
         {
-            "ruleId": "img_alt_valid",
+            "ruleId": "text_contrast_sufficient",
             "value": [
                 "VIOLATION",
-                "FAIL"
+                "POTENTIAL"
             ],
             "path": {
-                "dom": "/html[1]/body[1]/img[1]",
-                "aria": "/document[1]/img[1]"
+                "dom": "/html[1]/body[1]/div[1]/div[1]/h1[1]",
+                "aria": "/document[1]/heading[1]"
             },
             "ruleTime": 0,
-            "reasonId": "fail_no_alt",
-            "message": "The image has neither an accessible name nor is marked as decorative or redundant",
-            "messageArgs": [],
+            "reasonId": "potential_graphic_background",
+            "message": "Verify the contrast ratio of the text against the lightest and the darkest colors of the background meets the WCAG AA minimum requirements for text of size 50px and weight of 700",
+            "messageArgs": [
+                "1.00",
+                50,
+                700
+            ],
             "apiArgs": [],
             "bounds": {
-                "left": 8,
-                "top": 80,
-                "height": 40,
-                "width": 80
+                "left": 20,
+                "top": 367,
+                "height": 60,
+                "width": 760
             },
-            "snippet": "<img height=\"40\" width=\"80\" src=\"data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=\">",
+            "snippet": "<h1>",
             "source": null,
             "category": "Accessibility",
-            "level": "violation",
+            "level": "potentialviolation",
             "ignored": false,
-            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/img_alt_valid.html#%7B%22message%22%3A%22The%20image%20has%20neither%20an%20accessible%20name%20nor%20is%20marked%20as%20decorative%20or%20redundant%22%2C%22snippet%22%3A%22%3Cimg%20height%3D%5C%2240%5C%22%20width%3D%5C%2280%5C%22%20src%3D%5C%22data%3Aimage%2Fgif%3Bbase64%2CR0lGODlhAQABAAAAACwAAAAAAQABAAA%3D%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_no_alt%22%2C%22ruleId%22%3A%22img_alt_valid%22%2C%22msgArgs%22%3A%5B%5D%7D"
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Verify%20the%20contrast%20ratio%20of%20the%20text%20against%20the%20lightest%20and%20the%20darkest%20colors%20of%20the%20background%20meets%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2050px%20and%20weight%20of%20700%22%2C%22snippet%22%3A%22%3Ch1%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_graphic_background%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%221.00%22%2C50%2C700%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[1]/div[1]/time[1]/time[2]",
+                "aria": "/document[1]/time[1]/time[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "potential_graphic_background",
+            "message": "Verify the contrast ratio of the text against the lightest and the darkest colors of the background meets the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "1.00",
+                16,
+                400
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 20,
+                "top": 450,
+                "height": 19,
+                "width": 94
+            },
+            "snippet": "<time itemprop=\"datePublished\" datetime=\"2026-05-08T12:22:50+00:00\" class=\"entry-date published\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Verify%20the%20contrast%20ratio%20of%20the%20text%20against%20the%20lightest%20and%20the%20darkest%20colors%20of%20the%20background%20meets%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Ctime%20itemprop%3D%5C%22datePublished%5C%22%20datetime%3D%5C%222026-05-08T12%3A22%3A50%2B00%3A00%5C%22%20class%3D%5C%22entry-date%20published%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_graphic_background%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%221.00%22%2C16%2C400%5D%7D"
         },
         {
             "ruleId": "text_contrast_sufficient",
@@ -147,90 +565,209 @@
                 "FAIL"
             ],
             "path": {
-                "dom": "/html[1]/body[1]/p[1]",
-                "aria": "/document[1]/paragraph[1]"
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[1]/main[1]/article[1]/div[1]/div[1]/p[1]/a[1]",
+                "aria": "/document[1]/main[1]/article[1]/paragraph[1]/link[1]"
             },
             "ruleTime": 0,
             "reasonId": "fail_contrast",
-            "message": "Text contrast of 2.32 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "message": "Text contrast of 3.20 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 400",
             "messageArgs": [
-                "2.32",
+                "3.20",
                 16,
                 400,
-                "#aaaaaa",
+                "#45a342",
                 "#ffffff",
                 false,
                 false
             ],
             "apiArgs": [],
             "bounds": {
-                "left": 8,
-                "top": 140,
-                "height": 18,
-                "width": 784
+                "left": 20,
+                "top": 698,
+                "height": 19,
+                "width": 80
             },
-            "snippet": "<p style=\"color:#aaaaaa;background:#ffffff\">",
+            "snippet": "<a rel=\"noreferrer noopener\" target=\"_blank\" href=\"https://www.ampersand-cap.com/fund-update/2026/AGOFS -Monthly 30th April 2026.pdf\">",
             "source": null,
             "category": "Accessibility",
             "level": "violation",
             "ignored": false,
-            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%202.32%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Cp%20style%3D%5C%22color%3A%23aaaaaa%3Bbackground%3A%23ffffff%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%222.32%22%2C16%2C400%2C%22%23aaaaaa%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%203.20%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Ca%20rel%3D%5C%22noreferrer%20noopener%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Fwww.ampersand-cap.com%2Ffund-update%2F2026%2FAGOFS%20-Monthly%2030th%20April%202026.pdf%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%223.20%22%2C16%2C400%2C%22%2345a342%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
         },
         {
-            "ruleId": "element_tabbable_visible",
+            "ruleId": "table_headers_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[1]/main[1]/article[1]/div[1]/div[1]/figure[1]/table[1]",
+                "aria": "/document[1]/main[1]/article[1]/figure[1]/table[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Table has no headers identified",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 20,
+                "top": 800,
+                "height": 470,
+                "width": 500
+            },
+            "snippet": "<table class=\"has-fixed-layout\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20class%3D%5C%22has-fixed-layout%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_attribute_valid",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[1]/main[1]/article[1]/div[1]/footer[1]",
+                "aria": "/document[1]/main[1]/article[1]/generic[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_invalid_implicit_role_attr",
+            "message": "The ARIA attributes \"aria-label\" are not valid for the element <footer> with implicit ARIA role \"generic\"",
+            "messageArgs": [
+                "aria-label",
+                "footer",
+                "generic"
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 20,
+                "top": 1372,
+                "height": 0,
+                "width": 500
+            },
+            "snippet": "<footer aria-label=\"Entry meta\" class=\"entry-meta\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_attribute_valid.html#%7B%22message%22%3A%22The%20ARIA%20attributes%20%5C%22aria-label%5C%22%20are%20not%20valid%20for%20the%20element%20%3Cfooter%3E%20with%20implicit%20ARIA%20role%20%5C%22generic%5C%22%22%2C%22snippet%22%3A%22%3Cfooter%20aria-label%3D%5C%22Entry%20meta%5C%22%20class%3D%5C%22entry-meta%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_invalid_implicit_role_attr%22%2C%22ruleId%22%3A%22aria_attribute_valid%22%2C%22msgArgs%22%3A%5B%22aria-label%22%2C%22footer%22%2C%22generic%22%5D%7D"
+        },
+        {
+            "ruleId": "aria_complementary_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/aside[1]",
+                "aria": "/document[1]/complementary[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Element with \"complementary\" role does not have a label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 560,
+                "top": 663,
+                "height": 106,
+                "width": 240
+            },
+            "snippet": "<aside class=\"widget inner-padding widget_block widget_search\" id=\"block-2\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_complementary_labelled.html#%7B%22message%22%3A%22Element%20with%20%5C%22complementary%5C%22%20role%20does%20not%20have%20a%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_block%20widget_search%5C%22%20id%3D%5C%22block-2%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_complementary_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_landmark_name_unique",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/aside[1]",
+                "aria": "/document[1]/complementary[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_label_not_unique",
+            "message": "Multiple elements with \"complementary\" landmarks within the same parent region are not distinguished from one another because they have the same \"\" label",
+            "messageArgs": [
+                "complementary",
+                ""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 560,
+                "top": 663,
+                "height": 106,
+                "width": 240
+            },
+            "snippet": "<aside class=\"widget inner-padding widget_block widget_search\" id=\"block-2\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_landmark_name_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22complementary%5C%22%20landmarks%20within%20the%20same%20parent%20region%20are%20not%20distinguished%20from%20one%20another%20because%20they%20have%20the%20same%20%5C%22%5C%22%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_block%20widget_search%5C%22%20id%3D%5C%22block-2%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_landmark_name_unique%22%2C%22msgArgs%22%3A%5B%22complementary%22%2C%22%22%5D%7D"
+        },
+        {
+            "ruleId": "label_content_exists",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/aside[1]/form[1]/label[1]",
+                "aria": "/document[1]/complementary[1]/search[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "The <label> element does not have descriptive text that identifies the expected input",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 590,
+                "top": 693,
+                "height": 0,
+                "width": 0
+            },
+            "snippet": "<label for=\"wp-block-search__input-1\" class=\"wp-block-search__label\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/label_content_exists.html#%7B%22message%22%3A%22The%20%3Clabel%3E%20element%20does%20not%20have%20descriptive%20text%20that%20identifies%20the%20expected%20input%22%2C%22snippet%22%3A%22%3Clabel%20for%3D%5C%22wp-block-search__input-1%5C%22%20class%3D%5C%22wp-block-search__label%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22label_content_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "style_focus_visible",
             "value": [
                 "VIOLATION",
                 "POTENTIAL"
             ],
             "path": {
-                "dom": "/html[1]/body[1]/a[1]",
-                "aria": "/document[1]/link[1]"
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/aside[1]/form[1]/div[1]/input[1]",
+                "aria": "/document[1]/complementary[1]/search[1]/searchbox[1]"
             },
-            "ruleTime": 0,
-            "reasonId": "potential_visible",
-            "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
+            "ruleTime": 4,
+            "reasonId": "potential_focus_not_visible",
+            "message": "Check the keyboard focus indicator is visible when using CSS declaration for 'border' or 'outline'",
             "messageArgs": [],
             "apiArgs": [],
             "bounds": {
-                "left": 8,
-                "top": 175,
-                "height": 17,
-                "width": 0
+                "left": 590,
+                "top": 693,
+                "height": 46,
+                "width": 69
             },
-            "snippet": "<a href=\"https://example.com\">",
+            "snippet": "<input required=\"\" name=\"s\" type=\"search\" value=\"\" placeholder=\"\" id=\"wp-block-search__input-1\" class=\"wp-block-search__input\">",
             "source": null,
             "category": "Accessibility",
             "level": "potentialviolation",
             "ignored": false,
-            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fexample.com%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
-        },
-        {
-            "ruleId": "a_text_purpose",
-            "value": [
-                "VIOLATION",
-                "FAIL"
-            ],
-            "path": {
-                "dom": "/html[1]/body[1]/a[1]",
-                "aria": "/document[1]/link[1]"
-            },
-            "ruleTime": 0,
-            "reasonId": "fail_acc_name",
-            "message": "Hyperlink has no link text, label or image with a text alternative",
-            "messageArgs": [],
-            "apiArgs": [],
-            "bounds": {
-                "left": 8,
-                "top": 175,
-                "height": 17,
-                "width": 0
-            },
-            "snippet": "<a href=\"https://example.com\">",
-            "source": null,
-            "category": "Accessibility",
-            "level": "violation",
-            "ignored": false,
-            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/a_text_purpose.html#%7B%22message%22%3A%22Hyperlink%20has%20no%20link%20text%2C%20label%20or%20image%20with%20a%20text%20alternative%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fexample.com%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_acc_name%22%2C%22ruleId%22%3A%22a_text_purpose%22%2C%22msgArgs%22%3A%5B%5D%7D"
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/style_focus_visible.html#%7B%22message%22%3A%22Check%20the%20keyboard%20focus%20indicator%20is%20visible%20when%20using%20CSS%20declaration%20for%20'border'%20or%20'outline'%22%2C%22snippet%22%3A%22%3Cinput%20required%3D%5C%22%5C%22%20name%3D%5C%22s%5C%22%20type%3D%5C%22search%5C%22%20value%3D%5C%22%5C%22%20placeholder%3D%5C%22%5C%22%20id%3D%5C%22wp-block-search__input-1%5C%22%20class%3D%5C%22wp-block-search__input%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_focus_not_visible%22%2C%22ruleId%22%3A%22style_focus_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
         },
         {
             "ruleId": "input_label_exists",
@@ -239,38 +776,8 @@
                 "FAIL"
             ],
             "path": {
-                "dom": "/html[1]/body[1]/button[1]",
-                "aria": "/document[1]/button[1]"
-            },
-            "ruleTime": 0,
-            "reasonId": "Fail_1",
-            "message": "Form control element <button> has no associated label",
-            "messageArgs": [
-                "button"
-            ],
-            "apiArgs": [],
-            "bounds": {
-                "left": 8,
-                "top": 186,
-                "height": 6,
-                "width": 16
-            },
-            "snippet": "<button>",
-            "source": null,
-            "category": "Accessibility",
-            "level": "violation",
-            "ignored": false,
-            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cbutton%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cbutton%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22button%22%5D%7D"
-        },
-        {
-            "ruleId": "input_label_exists",
-            "value": [
-                "VIOLATION",
-                "FAIL"
-            ],
-            "path": {
-                "dom": "/html[1]/body[1]/input[1]",
-                "aria": "/document[1]/textbox[1]"
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/aside[1]/form[1]/div[1]/input[1]",
+                "aria": "/document[1]/complementary[1]/search[1]/searchbox[1]"
             },
             "ruleTime": 0,
             "reasonId": "Fail_1",
@@ -280,53 +787,802 @@
             ],
             "apiArgs": [],
             "bounds": {
-                "left": 28,
-                "top": 174,
-                "height": 21,
-                "width": 177
+                "left": 590,
+                "top": 693,
+                "height": 46,
+                "width": 69
             },
-            "snippet": "<input type=\"text\">",
+            "snippet": "<input required=\"\" name=\"s\" type=\"search\" value=\"\" placeholder=\"\" id=\"wp-block-search__input-1\" class=\"wp-block-search__input\">",
             "source": null,
             "category": "Accessibility",
             "level": "violation",
             "ignored": false,
-            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cinput%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cinput%20type%3D%5C%22text%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cinput%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cinput%20required%3D%5C%22%5C%22%20name%3D%5C%22s%5C%22%20type%3D%5C%22search%5C%22%20value%3D%5C%22%5C%22%20placeholder%3D%5C%22%5C%22%20id%3D%5C%22wp-block-search__input-1%5C%22%20class%3D%5C%22wp-block-search__input%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+        },
+        {
+            "ruleId": "style_focus_visible",
+            "value": [
+                "VIOLATION",
+                "POTENTIAL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/aside[1]/form[1]/div[1]/button[1]",
+                "aria": "/document[1]/complementary[1]/search[1]/button[1]"
+            },
+            "ruleTime": 5,
+            "reasonId": "potential_focus_not_visible",
+            "message": "Check the keyboard focus indicator is visible when using CSS declaration for 'border' or 'outline'",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 669,
+                "top": 693,
+                "height": 46,
+                "width": 102
+            },
+            "snippet": "<button type=\"submit\" class=\"wp-block-search__button wp-element-button\" aria-label=\"Search\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "potentialviolation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/style_focus_visible.html#%7B%22message%22%3A%22Check%20the%20keyboard%20focus%20indicator%20is%20visible%20when%20using%20CSS%20declaration%20for%20'border'%20or%20'outline'%22%2C%22snippet%22%3A%22%3Cbutton%20type%3D%5C%22submit%5C%22%20class%3D%5C%22wp-block-search__button%20wp-element-button%5C%22%20aria-label%3D%5C%22Search%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_focus_not_visible%22%2C%22ruleId%22%3A%22style_focus_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_complementary_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/aside[2]",
+                "aria": "/document[1]/complementary[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Element with \"complementary\" role does not have a label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 560,
+                "top": 788,
+                "height": 445,
+                "width": 240
+            },
+            "snippet": "<aside class=\"widget inner-padding widget_block\" id=\"block-3\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_complementary_labelled.html#%7B%22message%22%3A%22Element%20with%20%5C%22complementary%5C%22%20role%20does%20not%20have%20a%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_block%5C%22%20id%3D%5C%22block-3%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_complementary_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_landmark_name_unique",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/aside[2]",
+                "aria": "/document[1]/complementary[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_label_not_unique",
+            "message": "Multiple elements with \"complementary\" landmarks within the same parent region are not distinguished from one another because they have the same \"\" label",
+            "messageArgs": [
+                "complementary",
+                ""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 560,
+                "top": 788,
+                "height": 445,
+                "width": 240
+            },
+            "snippet": "<aside class=\"widget inner-padding widget_block\" id=\"block-3\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_landmark_name_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22complementary%5C%22%20landmarks%20within%20the%20same%20parent%20region%20are%20not%20distinguished%20from%20one%20another%20because%20they%20have%20the%20same%20%5C%22%5C%22%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_block%5C%22%20id%3D%5C%22block-3%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_landmark_name_unique%22%2C%22msgArgs%22%3A%5B%22complementary%22%2C%22%22%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/aside[2]/div[1]/div[1]/ul[1]/li[1]/a[1]",
+                "aria": "/document[1]/complementary[2]/list[1]/listitem[1]/link[1]"
+            },
+            "ruleTime": 1,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 2.90 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "2.90",
+                16,
+                400,
+                "#45a342",
+                "#f2f4f8",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 614,
+                "top": 918,
+                "height": 45,
+                "width": 114
+            },
+            "snippet": "<a href=\"https://www.ampersand-cap.com/fund-update-june-30-2026/\" class=\"wp-block-latest-posts__post-title\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%202.90%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.ampersand-cap.com%2Ffund-update-june-30-2026%2F%5C%22%20class%3D%5C%22wp-block-latest-posts__post-title%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%222.90%22%2C16%2C400%2C%22%2345a342%22%2C%22%23f2f4f8%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/aside[2]/div[1]/div[1]/ul[1]/li[2]/a[1]",
+                "aria": "/document[1]/complementary[2]/list[1]/listitem[2]/link[1]"
+            },
+            "ruleTime": 1,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 2.90 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "2.90",
+                16,
+                400,
+                "#45a342",
+                "#f2f4f8",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 614,
+                "top": 977,
+                "height": 45,
+                "width": 151
+            },
+            "snippet": "<a href=\"https://www.ampersand-cap.com/fund-update-may-31-2026/\" class=\"wp-block-latest-posts__post-title\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%202.90%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.ampersand-cap.com%2Ffund-update-may-31-2026%2F%5C%22%20class%3D%5C%22wp-block-latest-posts__post-title%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%222.90%22%2C16%2C400%2C%22%2345a342%22%2C%22%23f2f4f8%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/aside[2]/div[1]/div[1]/ul[1]/li[3]/a[1]",
+                "aria": "/document[1]/complementary[2]/list[1]/listitem[3]/link[1]"
+            },
+            "ruleTime": 1,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 2.90 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "2.90",
+                16,
+                400,
+                "#45a342",
+                "#f2f4f8",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 614,
+                "top": 1036,
+                "height": 45,
+                "width": 156
+            },
+            "snippet": "<a href=\"https://www.ampersand-cap.com/fund-update-april-30-2026/\" class=\"wp-block-latest-posts__post-title\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%202.90%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.ampersand-cap.com%2Ffund-update-april-30-2026%2F%5C%22%20class%3D%5C%22wp-block-latest-posts__post-title%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%222.90%22%2C16%2C400%2C%22%2345a342%22%2C%22%23f2f4f8%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/aside[2]/div[1]/div[1]/ul[1]/li[4]/a[1]",
+                "aria": "/document[1]/complementary[2]/list[1]/listitem[4]/link[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 2.90 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "2.90",
+                16,
+                400,
+                "#45a342",
+                "#f2f4f8",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 614,
+                "top": 1095,
+                "height": 45,
+                "width": 116
+            },
+            "snippet": "<a href=\"https://www.ampersand-cap.com/fund-update-march-31-2026/\" class=\"wp-block-latest-posts__post-title\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%202.90%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.ampersand-cap.com%2Ffund-update-march-31-2026%2F%5C%22%20class%3D%5C%22wp-block-latest-posts__post-title%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%222.90%22%2C16%2C400%2C%22%2345a342%22%2C%22%23f2f4f8%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "text_contrast_sufficient",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/aside[2]/div[1]/div[1]/ul[1]/li[5]/a[1]",
+                "aria": "/document[1]/complementary[2]/list[1]/listitem[5]/link[1]"
+            },
+            "ruleTime": 1,
+            "reasonId": "fail_contrast",
+            "message": "Text contrast of 2.90 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 400",
+            "messageArgs": [
+                "2.90",
+                16,
+                400,
+                "#45a342",
+                "#f2f4f8",
+                false,
+                false
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 614,
+                "top": 1155,
+                "height": 45,
+                "width": 142
+            },
+            "snippet": "<a href=\"https://www.ampersand-cap.com/fund-update-february-28-2026/\" class=\"wp-block-latest-posts__post-title\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%202.90%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.ampersand-cap.com%2Ffund-update-february-28-2026%2F%5C%22%20class%3D%5C%22wp-block-latest-posts__post-title%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%222.90%22%2C16%2C400%2C%22%2345a342%22%2C%22%23f2f4f8%22%2Cfalse%2Cfalse%5D%7D"
+        },
+        {
+            "ruleId": "aria_complementary_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[1]/div[1]/div[1]/div[1]/aside[1]",
+                "aria": "/document[1]/complementary[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Element with \"complementary\" role does not have a label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 1472,
+                "height": 228,
+                "width": 254
+            },
+            "snippet": "<aside class=\"widget inner-padding widget_nav_menu\" id=\"nav_menu-5\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_complementary_labelled.html#%7B%22message%22%3A%22Element%20with%20%5C%22complementary%5C%22%20role%20does%20not%20have%20a%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_nav_menu%5C%22%20id%3D%5C%22nav_menu-5%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_complementary_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_landmark_name_unique",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[1]/div[1]/div[1]/div[1]/aside[1]",
+                "aria": "/document[1]/complementary[3]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_label_not_unique",
+            "message": "Multiple elements with \"complementary\" landmarks within the same parent region are not distinguished from one another because they have the same \"\" label",
+            "messageArgs": [
+                "complementary",
+                ""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 1472,
+                "height": 228,
+                "width": 254
+            },
+            "snippet": "<aside class=\"widget inner-padding widget_nav_menu\" id=\"nav_menu-5\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_landmark_name_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22complementary%5C%22%20landmarks%20within%20the%20same%20parent%20region%20are%20not%20distinguished%20from%20one%20another%20because%20they%20have%20the%20same%20%5C%22%5C%22%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_nav_menu%5C%22%20id%3D%5C%22nav_menu-5%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_landmark_name_unique%22%2C%22msgArgs%22%3A%5B%22complementary%22%2C%22%22%5D%7D"
+        },
+        {
+            "ruleId": "aria_complementary_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[1]/div[1]/div[1]/div[1]/aside[2]",
+                "aria": "/document[1]/complementary[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Element with \"complementary\" role does not have a label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 1729,
+                "height": 134,
+                "width": 254
+            },
+            "snippet": "<aside class=\"widget inner-padding widget_nav_menu\" id=\"nav_menu-3\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_complementary_labelled.html#%7B%22message%22%3A%22Element%20with%20%5C%22complementary%5C%22%20role%20does%20not%20have%20a%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_nav_menu%5C%22%20id%3D%5C%22nav_menu-3%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_complementary_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_landmark_name_unique",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[1]/div[1]/div[1]/div[1]/aside[2]",
+                "aria": "/document[1]/complementary[4]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_label_not_unique",
+            "message": "Multiple elements with \"complementary\" landmarks within the same parent region are not distinguished from one another because they have the same \"\" label",
+            "messageArgs": [
+                "complementary",
+                ""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 0,
+                "top": 1729,
+                "height": 134,
+                "width": 254
+            },
+            "snippet": "<aside class=\"widget inner-padding widget_nav_menu\" id=\"nav_menu-3\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_landmark_name_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22complementary%5C%22%20landmarks%20within%20the%20same%20parent%20region%20are%20not%20distinguished%20from%20one%20another%20because%20they%20have%20the%20same%20%5C%22%5C%22%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_nav_menu%5C%22%20id%3D%5C%22nav_menu-3%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_landmark_name_unique%22%2C%22msgArgs%22%3A%5B%22complementary%22%2C%22%22%5D%7D"
+        },
+        {
+            "ruleId": "aria_complementary_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[1]/div[1]/div[1]/div[2]/aside[1]",
+                "aria": "/document[1]/complementary[5]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Element with \"complementary\" role does not have a label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 254,
+                "top": 1472,
+                "height": 117,
+                "width": 254
+            },
+            "snippet": "<aside class=\"widget inner-padding widget_nav_menu\" id=\"nav_menu-4\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_complementary_labelled.html#%7B%22message%22%3A%22Element%20with%20%5C%22complementary%5C%22%20role%20does%20not%20have%20a%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_nav_menu%5C%22%20id%3D%5C%22nav_menu-4%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_complementary_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_landmark_name_unique",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[1]/div[1]/div[1]/div[2]/aside[1]",
+                "aria": "/document[1]/complementary[5]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_label_not_unique",
+            "message": "Multiple elements with \"complementary\" landmarks within the same parent region are not distinguished from one another because they have the same \"\" label",
+            "messageArgs": [
+                "complementary",
+                ""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 254,
+                "top": 1472,
+                "height": 117,
+                "width": 254
+            },
+            "snippet": "<aside class=\"widget inner-padding widget_nav_menu\" id=\"nav_menu-4\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_landmark_name_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22complementary%5C%22%20landmarks%20within%20the%20same%20parent%20region%20are%20not%20distinguished%20from%20one%20another%20because%20they%20have%20the%20same%20%5C%22%5C%22%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_nav_menu%5C%22%20id%3D%5C%22nav_menu-4%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_landmark_name_unique%22%2C%22msgArgs%22%3A%5B%22complementary%22%2C%22%22%5D%7D"
+        },
+        {
+            "ruleId": "aria_complementary_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[1]/div[1]/div[1]/div[2]/aside[2]",
+                "aria": "/document[1]/complementary[6]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Element with \"complementary\" role does not have a label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 254,
+                "top": 1618,
+                "height": 150,
+                "width": 254
+            },
+            "snippet": "<aside class=\"widget inner-padding widget_nav_menu\" id=\"nav_menu-6\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_complementary_labelled.html#%7B%22message%22%3A%22Element%20with%20%5C%22complementary%5C%22%20role%20does%20not%20have%20a%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_nav_menu%5C%22%20id%3D%5C%22nav_menu-6%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_complementary_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_landmark_name_unique",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[1]/div[1]/div[1]/div[2]/aside[2]",
+                "aria": "/document[1]/complementary[6]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_label_not_unique",
+            "message": "Multiple elements with \"complementary\" landmarks within the same parent region are not distinguished from one another because they have the same \"\" label",
+            "messageArgs": [
+                "complementary",
+                ""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 254,
+                "top": 1618,
+                "height": 150,
+                "width": 254
+            },
+            "snippet": "<aside class=\"widget inner-padding widget_nav_menu\" id=\"nav_menu-6\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_landmark_name_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22complementary%5C%22%20landmarks%20within%20the%20same%20parent%20region%20are%20not%20distinguished%20from%20one%20another%20because%20they%20have%20the%20same%20%5C%22%5C%22%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_nav_menu%5C%22%20id%3D%5C%22nav_menu-6%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_landmark_name_unique%22%2C%22msgArgs%22%3A%5B%22complementary%22%2C%22%22%5D%7D"
+        },
+        {
+            "ruleId": "aria_complementary_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[1]/div[1]/div[1]/div[3]/aside[1]",
+                "aria": "/document[1]/complementary[7]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Element with \"complementary\" role does not have a label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 507,
+                "top": 1472,
+                "height": 42,
+                "width": 254
+            },
+            "snippet": "<aside class=\"widget inner-padding widget_block\" id=\"block-17\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_complementary_labelled.html#%7B%22message%22%3A%22Element%20with%20%5C%22complementary%5C%22%20role%20does%20not%20have%20a%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_block%5C%22%20id%3D%5C%22block-17%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_complementary_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_landmark_name_unique",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[1]/div[1]/div[1]/div[3]/aside[1]",
+                "aria": "/document[1]/complementary[7]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_label_not_unique",
+            "message": "Multiple elements with \"complementary\" landmarks within the same parent region are not distinguished from one another because they have the same \"\" label",
+            "messageArgs": [
+                "complementary",
+                ""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 507,
+                "top": 1472,
+                "height": 42,
+                "width": 254
+            },
+            "snippet": "<aside class=\"widget inner-padding widget_block\" id=\"block-17\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_landmark_name_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22complementary%5C%22%20landmarks%20within%20the%20same%20parent%20region%20are%20not%20distinguished%20from%20one%20another%20because%20they%20have%20the%20same%20%5C%22%5C%22%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_block%5C%22%20id%3D%5C%22block-17%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_landmark_name_unique%22%2C%22msgArgs%22%3A%5B%22complementary%22%2C%22%22%5D%7D"
+        },
+        {
+            "ruleId": "aria_complementary_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[1]/div[1]/div[1]/div[3]/aside[2]",
+                "aria": "/document[1]/complementary[8]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Element with \"complementary\" role does not have a label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 507,
+                "top": 1544,
+                "height": 38,
+                "width": 254
+            },
+            "snippet": "<aside class=\"widget inner-padding widget_block\" id=\"block-20\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_complementary_labelled.html#%7B%22message%22%3A%22Element%20with%20%5C%22complementary%5C%22%20role%20does%20not%20have%20a%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_block%5C%22%20id%3D%5C%22block-20%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_complementary_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_landmark_name_unique",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/div[1]/div[1]/div[1]/div[3]/aside[2]",
+                "aria": "/document[1]/complementary[8]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_label_not_unique",
+            "message": "Multiple elements with \"complementary\" landmarks within the same parent region are not distinguished from one another because they have the same \"\" label",
+            "messageArgs": [
+                "complementary",
+                ""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 507,
+                "top": 1544,
+                "height": 38,
+                "width": 254
+            },
+            "snippet": "<aside class=\"widget inner-padding widget_block\" id=\"block-20\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_landmark_name_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22complementary%5C%22%20landmarks%20within%20the%20same%20parent%20region%20are%20not%20distinguished%20from%20one%20another%20because%20they%20have%20the%20same%20%5C%22%5C%22%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_block%5C%22%20id%3D%5C%22block-20%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_landmark_name_unique%22%2C%22msgArgs%22%3A%5B%22complementary%22%2C%22%22%5D%7D"
+        },
+        {
+            "ruleId": "aria_complementary_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/footer[1]/div[1]/div[1]/aside[1]",
+                "aria": "/document[1]/contentinfo[1]/complementary[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Element with \"complementary\" role does not have a label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 539,
+                "top": 1944,
+                "height": 24,
+                "width": 222
+            },
+            "snippet": "<aside class=\"widget inner-padding widget_block\" id=\"block-25\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_complementary_labelled.html#%7B%22message%22%3A%22Element%20with%20%5C%22complementary%5C%22%20role%20does%20not%20have%20a%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_block%5C%22%20id%3D%5C%22block-25%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_complementary_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_landmark_name_unique",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/footer[1]/div[1]/div[1]/aside[1]",
+                "aria": "/document[1]/contentinfo[1]/complementary[1]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_label_not_unique",
+            "message": "Multiple elements with \"complementary\" landmarks within the same parent region are not distinguished from one another because they have the same \"\" label",
+            "messageArgs": [
+                "complementary",
+                ""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 539,
+                "top": 1944,
+                "height": 24,
+                "width": 222
+            },
+            "snippet": "<aside class=\"widget inner-padding widget_block\" id=\"block-25\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_landmark_name_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22complementary%5C%22%20landmarks%20within%20the%20same%20parent%20region%20are%20not%20distinguished%20from%20one%20another%20because%20they%20have%20the%20same%20%5C%22%5C%22%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_block%5C%22%20id%3D%5C%22block-25%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_landmark_name_unique%22%2C%22msgArgs%22%3A%5B%22complementary%22%2C%22%22%5D%7D"
+        },
+        {
+            "ruleId": "aria_complementary_labelled",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/footer[1]/div[1]/div[1]/aside[2]",
+                "aria": "/document[1]/contentinfo[1]/complementary[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "Fail_1",
+            "message": "Element with \"complementary\" role does not have a label",
+            "messageArgs": [],
+            "apiArgs": [],
+            "bounds": {
+                "left": 539,
+                "top": 1968,
+                "height": 0,
+                "width": 222
+            },
+            "snippet": "<aside class=\"widget inner-padding widget_block\" id=\"block-24\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_complementary_labelled.html#%7B%22message%22%3A%22Element%20with%20%5C%22complementary%5C%22%20role%20does%20not%20have%20a%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_block%5C%22%20id%3D%5C%22block-24%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_complementary_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+        },
+        {
+            "ruleId": "aria_landmark_name_unique",
+            "value": [
+                "VIOLATION",
+                "FAIL"
+            ],
+            "path": {
+                "dom": "/html[1]/body[1]/div[3]/footer[1]/div[1]/div[1]/aside[2]",
+                "aria": "/document[1]/contentinfo[1]/complementary[2]"
+            },
+            "ruleTime": 0,
+            "reasonId": "fail_label_not_unique",
+            "message": "Multiple elements with \"complementary\" landmarks within the same parent region are not distinguished from one another because they have the same \"\" label",
+            "messageArgs": [
+                "complementary",
+                ""
+            ],
+            "apiArgs": [],
+            "bounds": {
+                "left": 539,
+                "top": 1968,
+                "height": 0,
+                "width": 222
+            },
+            "snippet": "<aside class=\"widget inner-padding widget_block\" id=\"block-24\">",
+            "source": null,
+            "category": "Accessibility",
+            "level": "violation",
+            "ignored": false,
+            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_landmark_name_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22complementary%5C%22%20landmarks%20within%20the%20same%20parent%20region%20are%20not%20distinguished%20from%20one%20another%20because%20they%20have%20the%20same%20%5C%22%5C%22%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_block%5C%22%20id%3D%5C%22block-24%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_landmark_name_unique%22%2C%22msgArgs%22%3A%5B%22complementary%22%2C%22%22%5D%7D"
         }
     ],
-    "numExecuted": 72,
-    "ruleTime": 5,
+    "numExecuted": 1505,
+    "ruleTime": 1446,
     "nls": {
-        "html_lang_exists": {
-            "0": "Page must identify the default language of the document with a 'lang' attribute",
-            "Fail_3": "Page detected as HTML, but does not have a 'lang' attribute"
-        },
         "aria_content_in_landmark": {
             "0": "All content must reside within an element with a landmark role",
             "Fail_1": "Content is not within a landmark element"
-        },
-        "skip_main_exists": {
-            "0": "Pages must provide a way to skip directly to the main content",
-            "Fail_1": "The page does not provide a way to quickly navigate to the main content (ARIA \"main\" landmark or a skip link)"
         },
         "style_color_misuse": {
             "0": "Combine color and descriptive markup to convey information",
             "Potential_1": "Verify color is not used as the only visual means of conveying information"
         },
-        "text_contrast_sufficient": {
-            "0": "The contrast ratio of text with its background must meet WCAG AA requirements",
-            "fail_contrast": "Text contrast of {0} with its background is less than the WCAG AA minimum requirements for text of size {1}px and weight of {2}"
-        },
-        "img_alt_valid": {
-            "0": "Images must have accessible names unless they are decorative or redundant",
-            "fail_no_alt": "The image has neither an accessible name nor is marked as decorative or redundant"
+        "aria_attribute_valid": {
+            "0": "ARIA attributes should be valid for the element and ARIA role to which they are assigned",
+            "Fail_invalid_implicit_role_attr": "The ARIA attributes \"{0}\" are not valid for the element <{1}> with implicit ARIA role \"{2}\""
         },
         "element_tabbable_visible": {
             "0": "A tabbable element should be visible on the screen when it has keyboard focus",
             "potential_visible": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus"
         },
-        "a_text_purpose": {
-            "0": "Hyperlinks must have an accessible name for their purpose",
-            "fail_acc_name": "Hyperlink has no link text, label or image with a text alternative"
+        "style_focus_visible": {
+            "0": "The keyboard focus indicator should be visible when default border or outline is modified by CSS",
+            "potential_focus_not_visible": "Check the keyboard focus indicator is visible when using CSS declaration for 'border' or 'outline'"
+        },
+        "aria_complementary_labelled": {
+            "0": "Each element with \"complementary\" role must have a label that describes its purpose",
+            "Fail_1": "Element with \"complementary\" role does not have a label"
+        },
+        "aria_landmark_name_unique": {
+            "0": "Each landmark should have a unique 'aria-labelledby' or 'aria-label' or be nested in a different parent region",
+            "fail_label_not_unique": "Multiple elements with \"{0}\" landmarks within the same parent region are not distinguished from one another because they have the same \"{1}\" label"
+        },
+        "text_contrast_sufficient": {
+            "0": "The contrast ratio of text with its background must meet WCAG AA requirements",
+            "fail_contrast": "Text contrast of {0} with its background is less than the WCAG AA minimum requirements for text of size {1}px and weight of {2}",
+            "potential_same_color": "The foreground text and its background color are both detected as {3}. Verify the text meets the WCAG AA requirements for minimum contrast",
+            "potential_graphic_background": "Verify the contrast ratio of the text against the lightest and the darkest colors of the background meets the WCAG AA minimum requirements for text of size {1}px and weight of {2}"
+        },
+        "table_headers_exists": {
+            "0": "Data table must identify headers",
+            "Fail_1": "Table has no headers identified"
+        },
+        "label_content_exists": {
+            "0": "A <label> element must have non-empty descriptive text that identifies the purpose of the interactive component",
+            "Fail_1": "The <label> element does not have descriptive text that identifies the expected input"
         },
         "input_label_exists": {
             "0": "Each form control must have an associated label",
@@ -336,17 +1592,17 @@
     "summary": {
         "counts": {
             "ignored": 0,
-            "elements": 8,
-            "elementsViolation": 8,
-            "elementsViolationReview": 8,
-            "violation": 8,
-            "potentialviolation": 2,
-            "recommendation": 0,
-            "potentialrecommendation": 0,
-            "manual": 1,
-            "pass": 61
+            "elements": 38,
+            "elementsViolation": 24,
+            "elementsViolationReview": 33,
+            "violation": 36,
+            "potentialviolation": 14,
+            "recommendation": 1,
+            "potentialrecommendation": 5,
+            "manual": 3,
+            "pass": 1446
         },
-        "scanTime": 22,
+        "scanTime": 1926,
         "ruleArchive": "Latest Deployment (latest)",
         "policies": [
             "IBM_Accessibility"
@@ -355,10 +1611,10 @@
             "violation",
             "potentialviolation"
         ],
-        "startScan": 1783803071649,
-        "URL": "http://127.0.0.1:8099/"
+        "startScan": 1783851113046,
+        "URL": "https://www.ampersand-cap.com/fund-update-april-30-2026/"
     },
-    "scanID": "c683a05e-1893-4df3-b9ad-995a47dba80c",
+    "scanID": "f052d50a-7ffe-409e-9212-4e220e66091a",
     "toolID": "accessibility-checker-v3.1.82",
     "label": "a11y-audit"
 }

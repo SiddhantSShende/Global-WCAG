@@ -16,16 +16,39 @@ import json
 import os
 import time
 import urllib.request
+from urllib.parse import urlparse
 
 from ...config import settings
 from . import toolrunner
 
 
+def _bare_host(value: str) -> str:
+    """Normalize any scope/host value to a bare, lowercased hostname.
+
+    Tolerates bare hosts, ``*.wildcards``, ``host:port``, ``user@host`` and full
+    URLs (``https://host/path``) — a user who pastes a URL into the scope field
+    still gets a usable host. Returns ``""`` for empty/garbage input.
+    """
+    v = (value or "").strip().lower()
+    if not v:
+        return ""
+    if "://" in v:
+        v = urlparse(v).netloc or v          # full URL → netloc
+    else:
+        v = v.split("/", 1)[0]               # bare host[:port]/path → host[:port]
+    v = v.split("@")[-1]                      # drop any userinfo
+    v = v.lstrip("*.")                        # wildcard cert entries
+    v = v.split(":", 1)[0]                    # drop port
+    return v.strip(".")
+
+
 def host_in_scope(host: str, allowlist: list[str]) -> bool:
-    host = host.lower().lstrip("*.").strip()
+    h = _bare_host(host)
+    if not h:
+        return False
     for allowed in allowlist:
-        a = allowed.lower().lstrip("*.").strip()
-        if host == a or host.endswith("." + a):
+        a = _bare_host(allowed)
+        if a and (h == a or h.endswith("." + a)):
             return True
     return False
 
@@ -123,22 +146,36 @@ def discover(domain: str, allowlist: list[str], allow_active: bool = False) -> d
     """Returns {'live': [urls], 'discovered': [hosts], 'out_of_scope': [hosts],
     'sources': {name: count}}. `allow_active` is reserved for a future gated
     brute-force source; passive-only today."""
-    domain = domain.replace("https://", "").replace("http://", "").strip("/").lower()
+    # Preserve the full authority (host[:port]) and scheme for probing/crawling —
+    # only SCOPE MATCHING is port-agnostic (via _bare_host). Dropping the port here
+    # would make a target on a non-standard port unreachable.
+    raw = (domain or "").strip()
+    parsed = urlparse(raw if "://" in raw else f"https://{raw}")
+    scheme = parsed.scheme or "https"
+    authority = (parsed.netloc or "").split("@")[-1].lower()   # host[:port]
+    host_only = _bare_host(authority)                          # bare host for CT lookups
 
     sources: dict[str, int] = {}
-    hosts: set[str] = {domain}
+    if not authority:
+        return {"live": [], "discovered": [], "in_scope": [],
+                "out_of_scope": [], "sources": sources}
 
-    sf = _subfinder(domain); sources["subfinder"] = len(sf); hosts |= sf
-    cs = _certspotter(domain); sources["certspotter"] = len(cs); hosts |= cs
-    ct = _crtsh(domain); sources["crt.sh"] = len(ct); hosts |= ct
+    hosts: set[str] = {authority}
+    sf = _subfinder(host_only); sources["subfinder"] = len(sf); hosts |= sf
+    cs = _certspotter(host_only); sources["certspotter"] = len(cs); hosts |= cs
+    ct = _crtsh(host_only); sources["crt.sh"] = len(ct); hosts |= ct
 
-    # Deny-by-default scoping.
-    in_scope = sorted(h for h in hosts if host_in_scope(h, allowlist))
-    out_of_scope = sorted(h for h in hosts if not host_in_scope(h, allowlist))
+    # Deny-by-default scoping — BUT the entered target is always in scope: it's the
+    # thing the user explicitly asked to audit. Extra allowlist entries only ADD
+    # sibling subdomains. Mirrors scripts/run_local_scan.py ([host] + allow).
+    effective_allow = [authority] + list(allowlist or [])
+
+    in_scope = sorted(h for h in hosts if host_in_scope(h, effective_allow))
+    out_of_scope = sorted(h for h in hosts if not host_in_scope(h, effective_allow))
 
     live = _httpx_live(in_scope) if in_scope else []
-    if not live and host_in_scope(domain, allowlist):
-        live = [f"https://{domain}"]
+    if not live and host_in_scope(authority, effective_allow):
+        live = [f"{scheme}://{authority}"]
 
     return {
         "live": live,
