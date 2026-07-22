@@ -26,7 +26,7 @@
             "category": "Accessibility",
             "level": "potentialviolation",
             "ignored": false,
-            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/style_color_misuse.html#%7B%22message%22%3A%22Verify%20color%20is%20not%20used%20as%20the%20only%20visual%20means%20of%20conveying%20information%22%2C%22snippet%22%3A%22%3Cstyle%20id%3D%5C%22wp-emoji-styles-inline-css%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22style_color_misuse%22%2C%22msgArgs%22%3A%5B%5D%7D"
+            "help": "https://able.ibm.com/rules/archives/2026.07.13/doc/en-US/style_color_misuse.html#%7B%22message%22%3A%22Verify%20color%20is%20not%20used%20as%20the%20only%20visual%20means%20of%20conveying%20information%22%2C%22snippet%22%3A%22%3Cstyle%20id%3D%5C%22wp-emoji-styles-inline-css%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22Potential_1%22%2C%22ruleId%22%3A%22style_color_misuse%22%2C%22msgArgs%22%3A%5B%5D%7D"
         },
         {
             "ruleId": "aria_complementary_labelled",
@@ -54,7 +54,7 @@
             "category": "Accessibility",
             "level": "violation",
             "ignored": false,
-            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_complementary_labelled.html#%7B%22message%22%3A%22Element%20with%20%5C%22complementary%5C%22%20role%20does%20not%20have%20a%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_block%5C%22%20id%3D%5C%22block-13%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_complementary_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+            "help": "https://able.ibm.com/rules/archives/2026.07.13/doc/en-US/aria_complementary_labelled.html#%7B%22message%22%3A%22Element%20with%20%5C%22complementary%5C%22%20role%20does%20not%20have%20a%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_block%5C%22%20id%3D%5C%22block-13%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_complementary_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
         },
         {
             "ruleId": "aria_landmark_name_unique",
@@ -85,7 +85,7 @@
             "category": "Accessibility",
             "level": "violation",
             "ignored": false,
-            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_landmark_name_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22complementary%5C%22%20landmarks%20within%20the%20same%20parent%20region%20are%20not%20distinguished%20from%20one%20another%20because%20they%20have%20the%20same%20%5C%22%5C%22%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_block%5C%22%20id%3D%5C%22block-13%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_landmark_name_unique%22%2C%22msgArgs%22%3A%5B%22complementary%22%2C%22%22%5D%7D"
+            "help": "https://able.ibm.com/rules/archives/2026.07.13/doc/en-US/aria_landmark_name_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22complementary%5C%22%20landmarks%20within%20the%20same%20parent%20region%20are%20not%20distinguished%20from%20one%20another%20because%20they%20have%20the%20same%20%5C%22%5C%22%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_block%5C%22%20id%3D%5C%22block-13%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_landmark_name_unique%22%2C%22msgArgs%22%3A%5B%22complementary%22%2C%22%22%5D%7D"
         },
         {
             "ruleId": "aria_complementary_labelled",
@@ -113,7 +113,7 @@
             "category": "Accessibility",
             "level": "violation",
             "ignored": false,
-            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_complementary_labelled.html#%7B%22message%22%3A%22Element%20with%20%5C%22complementary%5C%22%20role%20does%20not%20have%20a%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_block%5C%22%20id%3D%5C%22block-12%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_complementary_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+            "help": "https://able.ibm.com/rules/archives/2026.07.13/doc/en-US/aria_complementary_labelled.html#%7B%22message%22%3A%22Element%20with%20%5C%22complementary%5C%22%20role%20does%20not%20have%20a%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_block%5C%22%20id%3D%5C%22block-12%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_complementary_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
         },
         {
             "ruleId": "aria_landmark_name_unique",
@@ -144,7 +144,7 @@
             "category": "Accessibility",
             "level": "violation",
             "ignored": false,
-            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_landmark_name_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22complementary%5C%22%20landmarks%20within%20the%20same%20parent%20region%20are%20not%20distinguished%20from%20one%20another%20because%20they%20have%20the%20same%20%5C%22%5C%22%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_block%5C%22%20id%3D%5C%22block-12%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_landmark_name_unique%22%2C%22msgArgs%22%3A%5B%22complementary%22%2C%22%22%5D%7D"
+            "help": "https://able.ibm.com/rules/archives/2026.07.13/doc/en-US/aria_landmark_name_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22complementary%5C%22%20landmarks%20within%20the%20same%20parent%20region%20are%20not%20distinguished%20from%20one%20another%20because%20they%20have%20the%20same%20%5C%22%5C%22%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_block%5C%22%20id%3D%5C%22block-12%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_landmark_name_unique%22%2C%22msgArgs%22%3A%5B%22complementary%22%2C%22%22%5D%7D"
         },
         {
             "ruleId": "style_focus_visible",
@@ -156,7 +156,7 @@
                 "dom": "/html[1]/body[1]/header[1]/div[1]/div[2]/aside[2]/div[1]/div[1]/a[1]",
                 "aria": "/document[1]/banner[1]/complementary[2]/link[1]"
             },
-            "ruleTime": 10,
+            "ruleTime": 5,
             "reasonId": "potential_focus_not_visible",
             "message": "Check the keyboard focus indicator is visible when using CSS declaration for 'border' or 'outline'",
             "messageArgs": [],
@@ -172,7 +172,7 @@
             "category": "Accessibility",
             "level": "potentialviolation",
             "ignored": false,
-            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/style_focus_visible.html#%7B%22message%22%3A%22Check%20the%20keyboard%20focus%20indicator%20is%20visible%20when%20using%20CSS%20declaration%20for%20'border'%20or%20'outline'%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22%2Fwps%2Fcontact-us%5C%22%20class%3D%5C%22wp-block-button__link%20wp-element-button%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_focus_not_visible%22%2C%22ruleId%22%3A%22style_focus_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+            "help": "https://able.ibm.com/rules/archives/2026.07.13/doc/en-US/style_focus_visible.html#%7B%22message%22%3A%22Check%20the%20keyboard%20focus%20indicator%20is%20visible%20when%20using%20CSS%20declaration%20for%20'border'%20or%20'outline'%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22%2Fwps%2Fcontact-us%5C%22%20class%3D%5C%22wp-block-button__link%20wp-element-button%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_focus_not_visible%22%2C%22ruleId%22%3A%22style_focus_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
         },
         {
             "ruleId": "text_contrast_sufficient",
@@ -208,7 +208,7 @@
             "category": "Accessibility",
             "level": "violation",
             "ignored": false,
-            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%202.90%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2014px%20and%20weight%20of%20500%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22%2Fwps%2Fcontact-us%5C%22%20class%3D%5C%22wp-block-button__link%20wp-element-button%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%222.90%22%2C14%2C500%2C%22%23f2f4f8%22%2C%22%2345a342%22%2Cfalse%2Cfalse%5D%7D"
+            "help": "https://able.ibm.com/rules/archives/2026.07.13/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%202.90%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2014px%20and%20weight%20of%20500%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22%2Fwps%2Fcontact-us%5C%22%20class%3D%5C%22wp-block-button__link%20wp-element-button%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%222.90%22%2C14%2C500%2C%22%23f2f4f8%22%2C%22%2345a342%22%2Cfalse%2Cfalse%5D%7D"
         },
         {
             "ruleId": "element_tabbable_visible",
@@ -220,7 +220,7 @@
                 "dom": "/html[1]/body[1]/nav[2]/div[1]/div[1]/ul[1]/li[3]/ul[1]/li[1]/a[1]",
                 "aria": "/document[1]/navigation[2]/list[1]/listitem[3]/list[1]/listitem[1]/link[1]"
             },
-            "ruleTime": 3,
+            "ruleTime": 2,
             "reasonId": "potential_visible",
             "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
             "messageArgs": [],
@@ -236,7 +236,7 @@
             "category": "Accessibility",
             "level": "potentialviolation",
             "ignored": false,
-            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.ampersand-cap.com%2Fampersand-growth-opportunities-fund-scheme-agofs-1%2F%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+            "help": "https://able.ibm.com/rules/archives/2026.07.13/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.ampersand-cap.com%2Fampersand-growth-opportunities-fund-scheme-agofs-1%2F%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
         },
         {
             "ruleId": "text_contrast_sufficient",
@@ -272,7 +272,7 @@
             "category": "Accessibility",
             "level": "potentialviolation",
             "ignored": false,
-            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22The%20foreground%20text%20and%20its%20background%20color%20are%20both%20detected%20as%20%23ffffff.%20Verify%20the%20text%20meets%20the%20WCAG%20AA%20requirements%20for%20minimum%20contrast%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.ampersand-cap.com%2Fampersand-growth-opportunities-fund-scheme-agofs-1%2F%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_same_color%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%221.00%22%2C14%2C600%2C%22%23ffffff%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+            "help": "https://able.ibm.com/rules/archives/2026.07.13/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22The%20foreground%20text%20and%20its%20background%20color%20are%20both%20detected%20as%20%23ffffff.%20Verify%20the%20text%20meets%20the%20WCAG%20AA%20requirements%20for%20minimum%20contrast%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.ampersand-cap.com%2Fampersand-growth-opportunities-fund-scheme-agofs-1%2F%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_same_color%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%221.00%22%2C14%2C600%2C%22%23ffffff%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
         },
         {
             "ruleId": "element_tabbable_visible",
@@ -284,7 +284,7 @@
                 "dom": "/html[1]/body[1]/nav[2]/div[1]/div[1]/ul[1]/li[4]/ul[1]/li[1]/a[1]",
                 "aria": "/document[1]/navigation[2]/list[1]/listitem[4]/list[1]/listitem[1]/link[1]"
             },
-            "ruleTime": 4,
+            "ruleTime": 1,
             "reasonId": "potential_visible",
             "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
             "messageArgs": [],
@@ -300,7 +300,7 @@
             "category": "Accessibility",
             "level": "potentialviolation",
             "ignored": false,
-            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.ampersand-cap.com%2Fcategory%2Fmonthly-updates%2F%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+            "help": "https://able.ibm.com/rules/archives/2026.07.13/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.ampersand-cap.com%2Fcategory%2Fmonthly-updates%2F%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
         },
         {
             "ruleId": "text_contrast_sufficient",
@@ -336,7 +336,7 @@
             "category": "Accessibility",
             "level": "potentialviolation",
             "ignored": false,
-            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22The%20foreground%20text%20and%20its%20background%20color%20are%20both%20detected%20as%20%23ffffff.%20Verify%20the%20text%20meets%20the%20WCAG%20AA%20requirements%20for%20minimum%20contrast%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.ampersand-cap.com%2Fcategory%2Fmonthly-updates%2F%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_same_color%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%221.00%22%2C14%2C600%2C%22%23ffffff%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+            "help": "https://able.ibm.com/rules/archives/2026.07.13/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22The%20foreground%20text%20and%20its%20background%20color%20are%20both%20detected%20as%20%23ffffff.%20Verify%20the%20text%20meets%20the%20WCAG%20AA%20requirements%20for%20minimum%20contrast%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.ampersand-cap.com%2Fcategory%2Fmonthly-updates%2F%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_same_color%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%221.00%22%2C14%2C600%2C%22%23ffffff%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
         },
         {
             "ruleId": "element_tabbable_visible",
@@ -348,7 +348,7 @@
                 "dom": "/html[1]/body[1]/nav[2]/div[1]/div[1]/ul[1]/li[4]/ul[1]/li[2]/a[1]",
                 "aria": "/document[1]/navigation[2]/list[1]/listitem[4]/list[1]/listitem[2]/link[1]"
             },
-            "ruleTime": 1,
+            "ruleTime": 2,
             "reasonId": "potential_visible",
             "message": "Confirm the element should be tabbable and if so, it becomes visible when it has keyboard focus",
             "messageArgs": [],
@@ -364,7 +364,7 @@
             "category": "Accessibility",
             "level": "potentialviolation",
             "ignored": false,
-            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.ampersand-cap.com%2Fcategory%2Fblog%2F%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+            "help": "https://able.ibm.com/rules/archives/2026.07.13/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.ampersand-cap.com%2Fcategory%2Fblog%2F%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
         },
         {
             "ruleId": "text_contrast_sufficient",
@@ -376,7 +376,7 @@
                 "dom": "/html[1]/body[1]/nav[2]/div[1]/div[1]/ul[1]/li[4]/ul[1]/li[2]/a[1]",
                 "aria": "/document[1]/navigation[2]/list[1]/listitem[4]/list[1]/listitem[2]/link[1]"
             },
-            "ruleTime": 1,
+            "ruleTime": 0,
             "reasonId": "potential_same_color",
             "message": "The foreground text and its background color are both detected as #ffffff. Verify the text meets the WCAG AA requirements for minimum contrast",
             "messageArgs": [
@@ -400,7 +400,7 @@
             "category": "Accessibility",
             "level": "potentialviolation",
             "ignored": false,
-            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22The%20foreground%20text%20and%20its%20background%20color%20are%20both%20detected%20as%20%23ffffff.%20Verify%20the%20text%20meets%20the%20WCAG%20AA%20requirements%20for%20minimum%20contrast%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.ampersand-cap.com%2Fcategory%2Fblog%2F%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_same_color%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%221.00%22%2C14%2C600%2C%22%23ffffff%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+            "help": "https://able.ibm.com/rules/archives/2026.07.13/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22The%20foreground%20text%20and%20its%20background%20color%20are%20both%20detected%20as%20%23ffffff.%20Verify%20the%20text%20meets%20the%20WCAG%20AA%20requirements%20for%20minimum%20contrast%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.ampersand-cap.com%2Fcategory%2Fblog%2F%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_same_color%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%221.00%22%2C14%2C600%2C%22%23ffffff%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
         },
         {
             "ruleId": "element_tabbable_visible",
@@ -428,7 +428,7 @@
             "category": "Accessibility",
             "level": "potentialviolation",
             "ignored": false,
-            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.ampersand-cap.com%2Fvideos%2F%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+            "help": "https://able.ibm.com/rules/archives/2026.07.13/doc/en-US/element_tabbable_visible.html#%7B%22message%22%3A%22Confirm%20the%20element%20should%20be%20tabbable%20and%20if%20so%2C%20it%20becomes%20visible%20when%20it%20has%20keyboard%20focus%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.ampersand-cap.com%2Fvideos%2F%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_visible%22%2C%22ruleId%22%3A%22element_tabbable_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
         },
         {
             "ruleId": "text_contrast_sufficient",
@@ -440,7 +440,7 @@
                 "dom": "/html[1]/body[1]/nav[2]/div[1]/div[1]/ul[1]/li[4]/ul[1]/li[3]/a[1]",
                 "aria": "/document[1]/navigation[2]/list[1]/listitem[4]/list[1]/listitem[3]/link[1]"
             },
-            "ruleTime": 1,
+            "ruleTime": 0,
             "reasonId": "potential_same_color",
             "message": "The foreground text and its background color are both detected as #ffffff. Verify the text meets the WCAG AA requirements for minimum contrast",
             "messageArgs": [
@@ -464,7 +464,7 @@
             "category": "Accessibility",
             "level": "potentialviolation",
             "ignored": false,
-            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22The%20foreground%20text%20and%20its%20background%20color%20are%20both%20detected%20as%20%23ffffff.%20Verify%20the%20text%20meets%20the%20WCAG%20AA%20requirements%20for%20minimum%20contrast%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.ampersand-cap.com%2Fvideos%2F%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_same_color%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%221.00%22%2C14%2C600%2C%22%23ffffff%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+            "help": "https://able.ibm.com/rules/archives/2026.07.13/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22The%20foreground%20text%20and%20its%20background%20color%20are%20both%20detected%20as%20%23ffffff.%20Verify%20the%20text%20meets%20the%20WCAG%20AA%20requirements%20for%20minimum%20contrast%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.ampersand-cap.com%2Fvideos%2F%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_same_color%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%221.00%22%2C14%2C600%2C%22%23ffffff%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
         },
         {
             "ruleId": "aria_content_in_landmark",
@@ -492,7 +492,7 @@
             "category": "Accessibility",
             "level": "violation",
             "ignored": false,
-            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_content_in_landmark.html#%7B%22message%22%3A%22Content%20is%20not%20within%20a%20landmark%20element%22%2C%22snippet%22%3A%22%3Ch1%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_content_in_landmark%22%2C%22msgArgs%22%3A%5B%5D%7D"
+            "help": "https://able.ibm.com/rules/archives/2026.07.13/doc/en-US/aria_content_in_landmark.html#%7B%22message%22%3A%22Content%20is%20not%20within%20a%20landmark%20element%22%2C%22snippet%22%3A%22%3Ch1%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_content_in_landmark%22%2C%22msgArgs%22%3A%5B%5D%7D"
         },
         {
             "ruleId": "text_contrast_sufficient",
@@ -504,7 +504,7 @@
                 "dom": "/html[1]/body[1]/div[1]/div[1]/h1[1]",
                 "aria": "/document[1]/heading[1]"
             },
-            "ruleTime": 0,
+            "ruleTime": 1,
             "reasonId": "potential_graphic_background",
             "message": "Verify the contrast ratio of the text against the lightest and the darkest colors of the background meets the WCAG AA minimum requirements for text of size 50px and weight of 700",
             "messageArgs": [
@@ -524,7 +524,7 @@
             "category": "Accessibility",
             "level": "potentialviolation",
             "ignored": false,
-            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Verify%20the%20contrast%20ratio%20of%20the%20text%20against%20the%20lightest%20and%20the%20darkest%20colors%20of%20the%20background%20meets%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2050px%20and%20weight%20of%20700%22%2C%22snippet%22%3A%22%3Ch1%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_graphic_background%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%221.00%22%2C50%2C700%5D%7D"
+            "help": "https://able.ibm.com/rules/archives/2026.07.13/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Verify%20the%20contrast%20ratio%20of%20the%20text%20against%20the%20lightest%20and%20the%20darkest%20colors%20of%20the%20background%20meets%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2050px%20and%20weight%20of%20700%22%2C%22snippet%22%3A%22%3Ch1%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_graphic_background%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%221.00%22%2C50%2C700%5D%7D"
         },
         {
             "ruleId": "text_contrast_sufficient",
@@ -556,7 +556,7 @@
             "category": "Accessibility",
             "level": "potentialviolation",
             "ignored": false,
-            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Verify%20the%20contrast%20ratio%20of%20the%20text%20against%20the%20lightest%20and%20the%20darkest%20colors%20of%20the%20background%20meets%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Ctime%20itemprop%3D%5C%22datePublished%5C%22%20datetime%3D%5C%222026-05-08T12%3A22%3A50%2B00%3A00%5C%22%20class%3D%5C%22entry-date%20published%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_graphic_background%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%221.00%22%2C16%2C400%5D%7D"
+            "help": "https://able.ibm.com/rules/archives/2026.07.13/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Verify%20the%20contrast%20ratio%20of%20the%20text%20against%20the%20lightest%20and%20the%20darkest%20colors%20of%20the%20background%20meets%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Ctime%20itemprop%3D%5C%22datePublished%5C%22%20datetime%3D%5C%222026-05-08T12%3A22%3A50%2B00%3A00%5C%22%20class%3D%5C%22entry-date%20published%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_graphic_background%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%221.00%22%2C16%2C400%5D%7D"
         },
         {
             "ruleId": "text_contrast_sufficient",
@@ -592,7 +592,7 @@
             "category": "Accessibility",
             "level": "violation",
             "ignored": false,
-            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%203.20%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Ca%20rel%3D%5C%22noreferrer%20noopener%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Fwww.ampersand-cap.com%2Ffund-update%2F2026%2FAGOFS%20-Monthly%2030th%20April%202026.pdf%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%223.20%22%2C16%2C400%2C%22%2345a342%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
+            "help": "https://able.ibm.com/rules/archives/2026.07.13/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%203.20%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Ca%20rel%3D%5C%22noreferrer%20noopener%5C%22%20target%3D%5C%22_blank%5C%22%20href%3D%5C%22https%3A%2F%2Fwww.ampersand-cap.com%2Ffund-update%2F2026%2FAGOFS%20-Monthly%2030th%20April%202026.pdf%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%223.20%22%2C16%2C400%2C%22%2345a342%22%2C%22%23ffffff%22%2Cfalse%2Cfalse%5D%7D"
         },
         {
             "ruleId": "table_headers_exists",
@@ -620,7 +620,7 @@
             "category": "Accessibility",
             "level": "violation",
             "ignored": false,
-            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20class%3D%5C%22has-fixed-layout%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+            "help": "https://able.ibm.com/rules/archives/2026.07.13/doc/en-US/table_headers_exists.html#%7B%22message%22%3A%22Table%20has%20no%20headers%20identified%22%2C%22snippet%22%3A%22%3Ctable%20class%3D%5C%22has-fixed-layout%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22table_headers_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
         },
         {
             "ruleId": "aria_attribute_valid",
@@ -652,7 +652,7 @@
             "category": "Accessibility",
             "level": "violation",
             "ignored": false,
-            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_attribute_valid.html#%7B%22message%22%3A%22The%20ARIA%20attributes%20%5C%22aria-label%5C%22%20are%20not%20valid%20for%20the%20element%20%3Cfooter%3E%20with%20implicit%20ARIA%20role%20%5C%22generic%5C%22%22%2C%22snippet%22%3A%22%3Cfooter%20aria-label%3D%5C%22Entry%20meta%5C%22%20class%3D%5C%22entry-meta%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_invalid_implicit_role_attr%22%2C%22ruleId%22%3A%22aria_attribute_valid%22%2C%22msgArgs%22%3A%5B%22aria-label%22%2C%22footer%22%2C%22generic%22%5D%7D"
+            "help": "https://able.ibm.com/rules/archives/2026.07.13/doc/en-US/aria_attribute_valid.html#%7B%22message%22%3A%22The%20ARIA%20attributes%20%5C%22aria-label%5C%22%20are%20not%20valid%20for%20the%20element%20%3Cfooter%3E%20with%20implicit%20ARIA%20role%20%5C%22generic%5C%22%22%2C%22snippet%22%3A%22%3Cfooter%20aria-label%3D%5C%22Entry%20meta%5C%22%20class%3D%5C%22entry-meta%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_invalid_implicit_role_attr%22%2C%22ruleId%22%3A%22aria_attribute_valid%22%2C%22msgArgs%22%3A%5B%22aria-label%22%2C%22footer%22%2C%22generic%22%5D%7D"
         },
         {
             "ruleId": "aria_complementary_labelled",
@@ -680,7 +680,7 @@
             "category": "Accessibility",
             "level": "violation",
             "ignored": false,
-            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_complementary_labelled.html#%7B%22message%22%3A%22Element%20with%20%5C%22complementary%5C%22%20role%20does%20not%20have%20a%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_block%20widget_search%5C%22%20id%3D%5C%22block-2%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_complementary_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+            "help": "https://able.ibm.com/rules/archives/2026.07.13/doc/en-US/aria_complementary_labelled.html#%7B%22message%22%3A%22Element%20with%20%5C%22complementary%5C%22%20role%20does%20not%20have%20a%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_block%20widget_search%5C%22%20id%3D%5C%22block-2%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_complementary_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
         },
         {
             "ruleId": "aria_landmark_name_unique",
@@ -711,7 +711,7 @@
             "category": "Accessibility",
             "level": "violation",
             "ignored": false,
-            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_landmark_name_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22complementary%5C%22%20landmarks%20within%20the%20same%20parent%20region%20are%20not%20distinguished%20from%20one%20another%20because%20they%20have%20the%20same%20%5C%22%5C%22%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_block%20widget_search%5C%22%20id%3D%5C%22block-2%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_landmark_name_unique%22%2C%22msgArgs%22%3A%5B%22complementary%22%2C%22%22%5D%7D"
+            "help": "https://able.ibm.com/rules/archives/2026.07.13/doc/en-US/aria_landmark_name_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22complementary%5C%22%20landmarks%20within%20the%20same%20parent%20region%20are%20not%20distinguished%20from%20one%20another%20because%20they%20have%20the%20same%20%5C%22%5C%22%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_block%20widget_search%5C%22%20id%3D%5C%22block-2%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_landmark_name_unique%22%2C%22msgArgs%22%3A%5B%22complementary%22%2C%22%22%5D%7D"
         },
         {
             "ruleId": "label_content_exists",
@@ -739,7 +739,7 @@
             "category": "Accessibility",
             "level": "violation",
             "ignored": false,
-            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/label_content_exists.html#%7B%22message%22%3A%22The%20%3Clabel%3E%20element%20does%20not%20have%20descriptive%20text%20that%20identifies%20the%20expected%20input%22%2C%22snippet%22%3A%22%3Clabel%20for%3D%5C%22wp-block-search__input-1%5C%22%20class%3D%5C%22wp-block-search__label%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22label_content_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
+            "help": "https://able.ibm.com/rules/archives/2026.07.13/doc/en-US/label_content_exists.html#%7B%22message%22%3A%22The%20%3Clabel%3E%20element%20does%20not%20have%20descriptive%20text%20that%20identifies%20the%20expected%20input%22%2C%22snippet%22%3A%22%3Clabel%20for%3D%5C%22wp-block-search__input-1%5C%22%20class%3D%5C%22wp-block-search__label%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22label_content_exists%22%2C%22msgArgs%22%3A%5B%5D%7D"
         },
         {
             "ruleId": "style_focus_visible",
@@ -751,7 +751,7 @@
                 "dom": "/html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/aside[1]/form[1]/div[1]/input[1]",
                 "aria": "/document[1]/complementary[1]/search[1]/searchbox[1]"
             },
-            "ruleTime": 4,
+            "ruleTime": 5,
             "reasonId": "potential_focus_not_visible",
             "message": "Check the keyboard focus indicator is visible when using CSS declaration for 'border' or 'outline'",
             "messageArgs": [],
@@ -767,7 +767,7 @@
             "category": "Accessibility",
             "level": "potentialviolation",
             "ignored": false,
-            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/style_focus_visible.html#%7B%22message%22%3A%22Check%20the%20keyboard%20focus%20indicator%20is%20visible%20when%20using%20CSS%20declaration%20for%20'border'%20or%20'outline'%22%2C%22snippet%22%3A%22%3Cinput%20required%3D%5C%22%5C%22%20name%3D%5C%22s%5C%22%20type%3D%5C%22search%5C%22%20value%3D%5C%22%5C%22%20placeholder%3D%5C%22%5C%22%20id%3D%5C%22wp-block-search__input-1%5C%22%20class%3D%5C%22wp-block-search__input%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_focus_not_visible%22%2C%22ruleId%22%3A%22style_focus_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+            "help": "https://able.ibm.com/rules/archives/2026.07.13/doc/en-US/style_focus_visible.html#%7B%22message%22%3A%22Check%20the%20keyboard%20focus%20indicator%20is%20visible%20when%20using%20CSS%20declaration%20for%20'border'%20or%20'outline'%22%2C%22snippet%22%3A%22%3Cinput%20required%3D%5C%22%5C%22%20name%3D%5C%22s%5C%22%20type%3D%5C%22search%5C%22%20value%3D%5C%22%5C%22%20placeholder%3D%5C%22%5C%22%20id%3D%5C%22wp-block-search__input-1%5C%22%20class%3D%5C%22wp-block-search__input%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_focus_not_visible%22%2C%22ruleId%22%3A%22style_focus_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
         },
         {
             "ruleId": "input_label_exists",
@@ -797,7 +797,7 @@
             "category": "Accessibility",
             "level": "violation",
             "ignored": false,
-            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cinput%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cinput%20required%3D%5C%22%5C%22%20name%3D%5C%22s%5C%22%20type%3D%5C%22search%5C%22%20value%3D%5C%22%5C%22%20placeholder%3D%5C%22%5C%22%20id%3D%5C%22wp-block-search__input-1%5C%22%20class%3D%5C%22wp-block-search__input%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
+            "help": "https://able.ibm.com/rules/archives/2026.07.13/doc/en-US/input_label_exists.html#%7B%22message%22%3A%22Form%20control%20element%20%3Cinput%3E%20has%20no%20associated%20label%22%2C%22snippet%22%3A%22%3Cinput%20required%3D%5C%22%5C%22%20name%3D%5C%22s%5C%22%20type%3D%5C%22search%5C%22%20value%3D%5C%22%5C%22%20placeholder%3D%5C%22%5C%22%20id%3D%5C%22wp-block-search__input-1%5C%22%20class%3D%5C%22wp-block-search__input%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22input_label_exists%22%2C%22msgArgs%22%3A%5B%22input%22%5D%7D"
         },
         {
             "ruleId": "style_focus_visible",
@@ -825,7 +825,7 @@
             "category": "Accessibility",
             "level": "potentialviolation",
             "ignored": false,
-            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/style_focus_visible.html#%7B%22message%22%3A%22Check%20the%20keyboard%20focus%20indicator%20is%20visible%20when%20using%20CSS%20declaration%20for%20'border'%20or%20'outline'%22%2C%22snippet%22%3A%22%3Cbutton%20type%3D%5C%22submit%5C%22%20class%3D%5C%22wp-block-search__button%20wp-element-button%5C%22%20aria-label%3D%5C%22Search%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_focus_not_visible%22%2C%22ruleId%22%3A%22style_focus_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
+            "help": "https://able.ibm.com/rules/archives/2026.07.13/doc/en-US/style_focus_visible.html#%7B%22message%22%3A%22Check%20the%20keyboard%20focus%20indicator%20is%20visible%20when%20using%20CSS%20declaration%20for%20'border'%20or%20'outline'%22%2C%22snippet%22%3A%22%3Cbutton%20type%3D%5C%22submit%5C%22%20class%3D%5C%22wp-block-search__button%20wp-element-button%5C%22%20aria-label%3D%5C%22Search%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22POTENTIAL%22%5D%2C%22reasonId%22%3A%22potential_focus_not_visible%22%2C%22ruleId%22%3A%22style_focus_visible%22%2C%22msgArgs%22%3A%5B%5D%7D"
         },
         {
             "ruleId": "aria_complementary_labelled",
@@ -853,7 +853,7 @@
             "category": "Accessibility",
             "level": "violation",
             "ignored": false,
-            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_complementary_labelled.html#%7B%22message%22%3A%22Element%20with%20%5C%22complementary%5C%22%20role%20does%20not%20have%20a%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_block%5C%22%20id%3D%5C%22block-3%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_complementary_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+            "help": "https://able.ibm.com/rules/archives/2026.07.13/doc/en-US/aria_complementary_labelled.html#%7B%22message%22%3A%22Element%20with%20%5C%22complementary%5C%22%20role%20does%20not%20have%20a%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_block%5C%22%20id%3D%5C%22block-3%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_complementary_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
         },
         {
             "ruleId": "aria_landmark_name_unique",
@@ -884,7 +884,7 @@
             "category": "Accessibility",
             "level": "violation",
             "ignored": false,
-            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_landmark_name_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22complementary%5C%22%20landmarks%20within%20the%20same%20parent%20region%20are%20not%20distinguished%20from%20one%20another%20because%20they%20have%20the%20same%20%5C%22%5C%22%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_block%5C%22%20id%3D%5C%22block-3%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_landmark_name_unique%22%2C%22msgArgs%22%3A%5B%22complementary%22%2C%22%22%5D%7D"
+            "help": "https://able.ibm.com/rules/archives/2026.07.13/doc/en-US/aria_landmark_name_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22complementary%5C%22%20landmarks%20within%20the%20same%20parent%20region%20are%20not%20distinguished%20from%20one%20another%20because%20they%20have%20the%20same%20%5C%22%5C%22%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_block%5C%22%20id%3D%5C%22block-3%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_landmark_name_unique%22%2C%22msgArgs%22%3A%5B%22complementary%22%2C%22%22%5D%7D"
         },
         {
             "ruleId": "text_contrast_sufficient",
@@ -896,7 +896,7 @@
                 "dom": "/html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/aside[2]/div[1]/div[1]/ul[1]/li[1]/a[1]",
                 "aria": "/document[1]/complementary[2]/list[1]/listitem[1]/link[1]"
             },
-            "ruleTime": 1,
+            "ruleTime": 0,
             "reasonId": "fail_contrast",
             "message": "Text contrast of 2.90 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 400",
             "messageArgs": [
@@ -920,7 +920,7 @@
             "category": "Accessibility",
             "level": "violation",
             "ignored": false,
-            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%202.90%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.ampersand-cap.com%2Ffund-update-june-30-2026%2F%5C%22%20class%3D%5C%22wp-block-latest-posts__post-title%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%222.90%22%2C16%2C400%2C%22%2345a342%22%2C%22%23f2f4f8%22%2Cfalse%2Cfalse%5D%7D"
+            "help": "https://able.ibm.com/rules/archives/2026.07.13/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%202.90%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.ampersand-cap.com%2Ffund-update-june-30-2026%2F%5C%22%20class%3D%5C%22wp-block-latest-posts__post-title%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%222.90%22%2C16%2C400%2C%22%2345a342%22%2C%22%23f2f4f8%22%2Cfalse%2Cfalse%5D%7D"
         },
         {
             "ruleId": "text_contrast_sufficient",
@@ -956,7 +956,7 @@
             "category": "Accessibility",
             "level": "violation",
             "ignored": false,
-            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%202.90%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.ampersand-cap.com%2Ffund-update-may-31-2026%2F%5C%22%20class%3D%5C%22wp-block-latest-posts__post-title%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%222.90%22%2C16%2C400%2C%22%2345a342%22%2C%22%23f2f4f8%22%2Cfalse%2Cfalse%5D%7D"
+            "help": "https://able.ibm.com/rules/archives/2026.07.13/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%202.90%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.ampersand-cap.com%2Ffund-update-may-31-2026%2F%5C%22%20class%3D%5C%22wp-block-latest-posts__post-title%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%222.90%22%2C16%2C400%2C%22%2345a342%22%2C%22%23f2f4f8%22%2Cfalse%2Cfalse%5D%7D"
         },
         {
             "ruleId": "text_contrast_sufficient",
@@ -992,7 +992,7 @@
             "category": "Accessibility",
             "level": "violation",
             "ignored": false,
-            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%202.90%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.ampersand-cap.com%2Ffund-update-april-30-2026%2F%5C%22%20class%3D%5C%22wp-block-latest-posts__post-title%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%222.90%22%2C16%2C400%2C%22%2345a342%22%2C%22%23f2f4f8%22%2Cfalse%2Cfalse%5D%7D"
+            "help": "https://able.ibm.com/rules/archives/2026.07.13/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%202.90%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.ampersand-cap.com%2Ffund-update-april-30-2026%2F%5C%22%20class%3D%5C%22wp-block-latest-posts__post-title%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%222.90%22%2C16%2C400%2C%22%2345a342%22%2C%22%23f2f4f8%22%2Cfalse%2Cfalse%5D%7D"
         },
         {
             "ruleId": "text_contrast_sufficient",
@@ -1004,7 +1004,7 @@
                 "dom": "/html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/aside[2]/div[1]/div[1]/ul[1]/li[4]/a[1]",
                 "aria": "/document[1]/complementary[2]/list[1]/listitem[4]/link[1]"
             },
-            "ruleTime": 0,
+            "ruleTime": 1,
             "reasonId": "fail_contrast",
             "message": "Text contrast of 2.90 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 400",
             "messageArgs": [
@@ -1028,7 +1028,7 @@
             "category": "Accessibility",
             "level": "violation",
             "ignored": false,
-            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%202.90%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.ampersand-cap.com%2Ffund-update-march-31-2026%2F%5C%22%20class%3D%5C%22wp-block-latest-posts__post-title%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%222.90%22%2C16%2C400%2C%22%2345a342%22%2C%22%23f2f4f8%22%2Cfalse%2Cfalse%5D%7D"
+            "help": "https://able.ibm.com/rules/archives/2026.07.13/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%202.90%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.ampersand-cap.com%2Ffund-update-march-31-2026%2F%5C%22%20class%3D%5C%22wp-block-latest-posts__post-title%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%222.90%22%2C16%2C400%2C%22%2345a342%22%2C%22%23f2f4f8%22%2Cfalse%2Cfalse%5D%7D"
         },
         {
             "ruleId": "text_contrast_sufficient",
@@ -1040,7 +1040,7 @@
                 "dom": "/html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/aside[2]/div[1]/div[1]/ul[1]/li[5]/a[1]",
                 "aria": "/document[1]/complementary[2]/list[1]/listitem[5]/link[1]"
             },
-            "ruleTime": 1,
+            "ruleTime": 0,
             "reasonId": "fail_contrast",
             "message": "Text contrast of 2.90 with its background is less than the WCAG AA minimum requirements for text of size 16px and weight of 400",
             "messageArgs": [
@@ -1064,7 +1064,7 @@
             "category": "Accessibility",
             "level": "violation",
             "ignored": false,
-            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%202.90%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.ampersand-cap.com%2Ffund-update-february-28-2026%2F%5C%22%20class%3D%5C%22wp-block-latest-posts__post-title%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%222.90%22%2C16%2C400%2C%22%2345a342%22%2C%22%23f2f4f8%22%2Cfalse%2Cfalse%5D%7D"
+            "help": "https://able.ibm.com/rules/archives/2026.07.13/doc/en-US/text_contrast_sufficient.html#%7B%22message%22%3A%22Text%20contrast%20of%202.90%20with%20its%20background%20is%20less%20than%20the%20WCAG%20AA%20minimum%20requirements%20for%20text%20of%20size%2016px%20and%20weight%20of%20400%22%2C%22snippet%22%3A%22%3Ca%20href%3D%5C%22https%3A%2F%2Fwww.ampersand-cap.com%2Ffund-update-february-28-2026%2F%5C%22%20class%3D%5C%22wp-block-latest-posts__post-title%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_contrast%22%2C%22ruleId%22%3A%22text_contrast_sufficient%22%2C%22msgArgs%22%3A%5B%222.90%22%2C16%2C400%2C%22%2345a342%22%2C%22%23f2f4f8%22%2Cfalse%2Cfalse%5D%7D"
         },
         {
             "ruleId": "aria_complementary_labelled",
@@ -1092,7 +1092,7 @@
             "category": "Accessibility",
             "level": "violation",
             "ignored": false,
-            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_complementary_labelled.html#%7B%22message%22%3A%22Element%20with%20%5C%22complementary%5C%22%20role%20does%20not%20have%20a%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_nav_menu%5C%22%20id%3D%5C%22nav_menu-5%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_complementary_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+            "help": "https://able.ibm.com/rules/archives/2026.07.13/doc/en-US/aria_complementary_labelled.html#%7B%22message%22%3A%22Element%20with%20%5C%22complementary%5C%22%20role%20does%20not%20have%20a%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_nav_menu%5C%22%20id%3D%5C%22nav_menu-5%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_complementary_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
         },
         {
             "ruleId": "aria_landmark_name_unique",
@@ -1123,7 +1123,7 @@
             "category": "Accessibility",
             "level": "violation",
             "ignored": false,
-            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_landmark_name_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22complementary%5C%22%20landmarks%20within%20the%20same%20parent%20region%20are%20not%20distinguished%20from%20one%20another%20because%20they%20have%20the%20same%20%5C%22%5C%22%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_nav_menu%5C%22%20id%3D%5C%22nav_menu-5%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_landmark_name_unique%22%2C%22msgArgs%22%3A%5B%22complementary%22%2C%22%22%5D%7D"
+            "help": "https://able.ibm.com/rules/archives/2026.07.13/doc/en-US/aria_landmark_name_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22complementary%5C%22%20landmarks%20within%20the%20same%20parent%20region%20are%20not%20distinguished%20from%20one%20another%20because%20they%20have%20the%20same%20%5C%22%5C%22%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_nav_menu%5C%22%20id%3D%5C%22nav_menu-5%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_landmark_name_unique%22%2C%22msgArgs%22%3A%5B%22complementary%22%2C%22%22%5D%7D"
         },
         {
             "ruleId": "aria_complementary_labelled",
@@ -1151,7 +1151,7 @@
             "category": "Accessibility",
             "level": "violation",
             "ignored": false,
-            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_complementary_labelled.html#%7B%22message%22%3A%22Element%20with%20%5C%22complementary%5C%22%20role%20does%20not%20have%20a%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_nav_menu%5C%22%20id%3D%5C%22nav_menu-3%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_complementary_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+            "help": "https://able.ibm.com/rules/archives/2026.07.13/doc/en-US/aria_complementary_labelled.html#%7B%22message%22%3A%22Element%20with%20%5C%22complementary%5C%22%20role%20does%20not%20have%20a%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_nav_menu%5C%22%20id%3D%5C%22nav_menu-3%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_complementary_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
         },
         {
             "ruleId": "aria_landmark_name_unique",
@@ -1182,7 +1182,7 @@
             "category": "Accessibility",
             "level": "violation",
             "ignored": false,
-            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_landmark_name_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22complementary%5C%22%20landmarks%20within%20the%20same%20parent%20region%20are%20not%20distinguished%20from%20one%20another%20because%20they%20have%20the%20same%20%5C%22%5C%22%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_nav_menu%5C%22%20id%3D%5C%22nav_menu-3%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_landmark_name_unique%22%2C%22msgArgs%22%3A%5B%22complementary%22%2C%22%22%5D%7D"
+            "help": "https://able.ibm.com/rules/archives/2026.07.13/doc/en-US/aria_landmark_name_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22complementary%5C%22%20landmarks%20within%20the%20same%20parent%20region%20are%20not%20distinguished%20from%20one%20another%20because%20they%20have%20the%20same%20%5C%22%5C%22%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_nav_menu%5C%22%20id%3D%5C%22nav_menu-3%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_landmark_name_unique%22%2C%22msgArgs%22%3A%5B%22complementary%22%2C%22%22%5D%7D"
         },
         {
             "ruleId": "aria_complementary_labelled",
@@ -1210,7 +1210,7 @@
             "category": "Accessibility",
             "level": "violation",
             "ignored": false,
-            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_complementary_labelled.html#%7B%22message%22%3A%22Element%20with%20%5C%22complementary%5C%22%20role%20does%20not%20have%20a%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_nav_menu%5C%22%20id%3D%5C%22nav_menu-4%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_complementary_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+            "help": "https://able.ibm.com/rules/archives/2026.07.13/doc/en-US/aria_complementary_labelled.html#%7B%22message%22%3A%22Element%20with%20%5C%22complementary%5C%22%20role%20does%20not%20have%20a%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_nav_menu%5C%22%20id%3D%5C%22nav_menu-4%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_complementary_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
         },
         {
             "ruleId": "aria_landmark_name_unique",
@@ -1241,7 +1241,7 @@
             "category": "Accessibility",
             "level": "violation",
             "ignored": false,
-            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_landmark_name_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22complementary%5C%22%20landmarks%20within%20the%20same%20parent%20region%20are%20not%20distinguished%20from%20one%20another%20because%20they%20have%20the%20same%20%5C%22%5C%22%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_nav_menu%5C%22%20id%3D%5C%22nav_menu-4%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_landmark_name_unique%22%2C%22msgArgs%22%3A%5B%22complementary%22%2C%22%22%5D%7D"
+            "help": "https://able.ibm.com/rules/archives/2026.07.13/doc/en-US/aria_landmark_name_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22complementary%5C%22%20landmarks%20within%20the%20same%20parent%20region%20are%20not%20distinguished%20from%20one%20another%20because%20they%20have%20the%20same%20%5C%22%5C%22%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_nav_menu%5C%22%20id%3D%5C%22nav_menu-4%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_landmark_name_unique%22%2C%22msgArgs%22%3A%5B%22complementary%22%2C%22%22%5D%7D"
         },
         {
             "ruleId": "aria_complementary_labelled",
@@ -1269,7 +1269,7 @@
             "category": "Accessibility",
             "level": "violation",
             "ignored": false,
-            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_complementary_labelled.html#%7B%22message%22%3A%22Element%20with%20%5C%22complementary%5C%22%20role%20does%20not%20have%20a%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_nav_menu%5C%22%20id%3D%5C%22nav_menu-6%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_complementary_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+            "help": "https://able.ibm.com/rules/archives/2026.07.13/doc/en-US/aria_complementary_labelled.html#%7B%22message%22%3A%22Element%20with%20%5C%22complementary%5C%22%20role%20does%20not%20have%20a%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_nav_menu%5C%22%20id%3D%5C%22nav_menu-6%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_complementary_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
         },
         {
             "ruleId": "aria_landmark_name_unique",
@@ -1300,7 +1300,7 @@
             "category": "Accessibility",
             "level": "violation",
             "ignored": false,
-            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_landmark_name_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22complementary%5C%22%20landmarks%20within%20the%20same%20parent%20region%20are%20not%20distinguished%20from%20one%20another%20because%20they%20have%20the%20same%20%5C%22%5C%22%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_nav_menu%5C%22%20id%3D%5C%22nav_menu-6%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_landmark_name_unique%22%2C%22msgArgs%22%3A%5B%22complementary%22%2C%22%22%5D%7D"
+            "help": "https://able.ibm.com/rules/archives/2026.07.13/doc/en-US/aria_landmark_name_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22complementary%5C%22%20landmarks%20within%20the%20same%20parent%20region%20are%20not%20distinguished%20from%20one%20another%20because%20they%20have%20the%20same%20%5C%22%5C%22%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_nav_menu%5C%22%20id%3D%5C%22nav_menu-6%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_landmark_name_unique%22%2C%22msgArgs%22%3A%5B%22complementary%22%2C%22%22%5D%7D"
         },
         {
             "ruleId": "aria_complementary_labelled",
@@ -1328,7 +1328,7 @@
             "category": "Accessibility",
             "level": "violation",
             "ignored": false,
-            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_complementary_labelled.html#%7B%22message%22%3A%22Element%20with%20%5C%22complementary%5C%22%20role%20does%20not%20have%20a%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_block%5C%22%20id%3D%5C%22block-17%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_complementary_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+            "help": "https://able.ibm.com/rules/archives/2026.07.13/doc/en-US/aria_complementary_labelled.html#%7B%22message%22%3A%22Element%20with%20%5C%22complementary%5C%22%20role%20does%20not%20have%20a%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_block%5C%22%20id%3D%5C%22block-17%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_complementary_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
         },
         {
             "ruleId": "aria_landmark_name_unique",
@@ -1359,7 +1359,7 @@
             "category": "Accessibility",
             "level": "violation",
             "ignored": false,
-            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_landmark_name_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22complementary%5C%22%20landmarks%20within%20the%20same%20parent%20region%20are%20not%20distinguished%20from%20one%20another%20because%20they%20have%20the%20same%20%5C%22%5C%22%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_block%5C%22%20id%3D%5C%22block-17%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_landmark_name_unique%22%2C%22msgArgs%22%3A%5B%22complementary%22%2C%22%22%5D%7D"
+            "help": "https://able.ibm.com/rules/archives/2026.07.13/doc/en-US/aria_landmark_name_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22complementary%5C%22%20landmarks%20within%20the%20same%20parent%20region%20are%20not%20distinguished%20from%20one%20another%20because%20they%20have%20the%20same%20%5C%22%5C%22%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_block%5C%22%20id%3D%5C%22block-17%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_landmark_name_unique%22%2C%22msgArgs%22%3A%5B%22complementary%22%2C%22%22%5D%7D"
         },
         {
             "ruleId": "aria_complementary_labelled",
@@ -1387,7 +1387,7 @@
             "category": "Accessibility",
             "level": "violation",
             "ignored": false,
-            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_complementary_labelled.html#%7B%22message%22%3A%22Element%20with%20%5C%22complementary%5C%22%20role%20does%20not%20have%20a%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_block%5C%22%20id%3D%5C%22block-20%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_complementary_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+            "help": "https://able.ibm.com/rules/archives/2026.07.13/doc/en-US/aria_complementary_labelled.html#%7B%22message%22%3A%22Element%20with%20%5C%22complementary%5C%22%20role%20does%20not%20have%20a%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_block%5C%22%20id%3D%5C%22block-20%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_complementary_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
         },
         {
             "ruleId": "aria_landmark_name_unique",
@@ -1418,7 +1418,7 @@
             "category": "Accessibility",
             "level": "violation",
             "ignored": false,
-            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_landmark_name_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22complementary%5C%22%20landmarks%20within%20the%20same%20parent%20region%20are%20not%20distinguished%20from%20one%20another%20because%20they%20have%20the%20same%20%5C%22%5C%22%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_block%5C%22%20id%3D%5C%22block-20%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_landmark_name_unique%22%2C%22msgArgs%22%3A%5B%22complementary%22%2C%22%22%5D%7D"
+            "help": "https://able.ibm.com/rules/archives/2026.07.13/doc/en-US/aria_landmark_name_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22complementary%5C%22%20landmarks%20within%20the%20same%20parent%20region%20are%20not%20distinguished%20from%20one%20another%20because%20they%20have%20the%20same%20%5C%22%5C%22%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_block%5C%22%20id%3D%5C%22block-20%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_landmark_name_unique%22%2C%22msgArgs%22%3A%5B%22complementary%22%2C%22%22%5D%7D"
         },
         {
             "ruleId": "aria_complementary_labelled",
@@ -1446,7 +1446,7 @@
             "category": "Accessibility",
             "level": "violation",
             "ignored": false,
-            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_complementary_labelled.html#%7B%22message%22%3A%22Element%20with%20%5C%22complementary%5C%22%20role%20does%20not%20have%20a%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_block%5C%22%20id%3D%5C%22block-25%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_complementary_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+            "help": "https://able.ibm.com/rules/archives/2026.07.13/doc/en-US/aria_complementary_labelled.html#%7B%22message%22%3A%22Element%20with%20%5C%22complementary%5C%22%20role%20does%20not%20have%20a%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_block%5C%22%20id%3D%5C%22block-25%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_complementary_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
         },
         {
             "ruleId": "aria_landmark_name_unique",
@@ -1477,7 +1477,7 @@
             "category": "Accessibility",
             "level": "violation",
             "ignored": false,
-            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_landmark_name_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22complementary%5C%22%20landmarks%20within%20the%20same%20parent%20region%20are%20not%20distinguished%20from%20one%20another%20because%20they%20have%20the%20same%20%5C%22%5C%22%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_block%5C%22%20id%3D%5C%22block-25%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_landmark_name_unique%22%2C%22msgArgs%22%3A%5B%22complementary%22%2C%22%22%5D%7D"
+            "help": "https://able.ibm.com/rules/archives/2026.07.13/doc/en-US/aria_landmark_name_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22complementary%5C%22%20landmarks%20within%20the%20same%20parent%20region%20are%20not%20distinguished%20from%20one%20another%20because%20they%20have%20the%20same%20%5C%22%5C%22%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_block%5C%22%20id%3D%5C%22block-25%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_landmark_name_unique%22%2C%22msgArgs%22%3A%5B%22complementary%22%2C%22%22%5D%7D"
         },
         {
             "ruleId": "aria_complementary_labelled",
@@ -1505,7 +1505,7 @@
             "category": "Accessibility",
             "level": "violation",
             "ignored": false,
-            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_complementary_labelled.html#%7B%22message%22%3A%22Element%20with%20%5C%22complementary%5C%22%20role%20does%20not%20have%20a%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_block%5C%22%20id%3D%5C%22block-24%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_complementary_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
+            "help": "https://able.ibm.com/rules/archives/2026.07.13/doc/en-US/aria_complementary_labelled.html#%7B%22message%22%3A%22Element%20with%20%5C%22complementary%5C%22%20role%20does%20not%20have%20a%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_block%5C%22%20id%3D%5C%22block-24%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22Fail_1%22%2C%22ruleId%22%3A%22aria_complementary_labelled%22%2C%22msgArgs%22%3A%5B%5D%7D"
         },
         {
             "ruleId": "aria_landmark_name_unique",
@@ -1536,11 +1536,11 @@
             "category": "Accessibility",
             "level": "violation",
             "ignored": false,
-            "help": "https://able.ibm.com/rules/archives/2026.05.19/doc/en-US/aria_landmark_name_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22complementary%5C%22%20landmarks%20within%20the%20same%20parent%20region%20are%20not%20distinguished%20from%20one%20another%20because%20they%20have%20the%20same%20%5C%22%5C%22%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_block%5C%22%20id%3D%5C%22block-24%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_landmark_name_unique%22%2C%22msgArgs%22%3A%5B%22complementary%22%2C%22%22%5D%7D"
+            "help": "https://able.ibm.com/rules/archives/2026.07.13/doc/en-US/aria_landmark_name_unique.html#%7B%22message%22%3A%22Multiple%20elements%20with%20%5C%22complementary%5C%22%20landmarks%20within%20the%20same%20parent%20region%20are%20not%20distinguished%20from%20one%20another%20because%20they%20have%20the%20same%20%5C%22%5C%22%20label%22%2C%22snippet%22%3A%22%3Caside%20class%3D%5C%22widget%20inner-padding%20widget_block%5C%22%20id%3D%5C%22block-24%5C%22%3E%22%2C%22value%22%3A%5B%22VIOLATION%22%2C%22FAIL%22%5D%2C%22reasonId%22%3A%22fail_label_not_unique%22%2C%22ruleId%22%3A%22aria_landmark_name_unique%22%2C%22msgArgs%22%3A%5B%22complementary%22%2C%22%22%5D%7D"
         }
     ],
     "numExecuted": 1505,
-    "ruleTime": 1446,
+    "ruleTime": 364,
     "nls": {
         "aria_content_in_landmark": {
             "0": "All content must reside within an element with a landmark role",
@@ -1602,7 +1602,7 @@
             "manual": 3,
             "pass": 1446
         },
-        "scanTime": 1926,
+        "scanTime": 532,
         "ruleArchive": "Latest Deployment (latest)",
         "policies": [
             "IBM_Accessibility"
@@ -1611,10 +1611,10 @@
             "violation",
             "potentialviolation"
         ],
-        "startScan": 1783851113046,
+        "startScan": 1784707391616,
         "URL": "https://www.ampersand-cap.com/fund-update-april-30-2026/"
     },
-    "scanID": "f052d50a-7ffe-409e-9212-4e220e66091a",
+    "scanID": "33a0b978-fd79-43de-923a-f33f9b811480",
     "toolID": "accessibility-checker-v3.1.82",
     "label": "a11y-audit"
 }

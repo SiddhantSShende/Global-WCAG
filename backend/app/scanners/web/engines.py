@@ -24,7 +24,9 @@ RUNNERS = {
 }
 
 
-def _parse_envelope(stdout: str) -> dict | None:
+def _parse_envelope(stdout: str | None) -> dict | None:
+    if not stdout:
+        return None
     for line in stdout.splitlines():
         idx = line.find(MARK)
         if idx != -1:
@@ -46,7 +48,7 @@ def run_engine(engine: str, url: str, timeout: int = 150) -> tuple[object | None
                                error="engine runner or node_modules missing "
                                      "(run scripts/setup_tools.sh)")
 
-    code, out, err = toolrunner.run([node, str(script), url], timeout=timeout, cwd=JS_DIR)
+    code, out, err = toolrunner.run([node, RUNNERS[engine], url], timeout=timeout, cwd=JS_DIR)
     env = _parse_envelope(out)
     if env is None:
         detail = (err or f"exit {code}, no result envelope").strip()[:500]

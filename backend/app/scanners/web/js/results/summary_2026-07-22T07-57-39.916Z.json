@@ -1,0 +1,46 @@
+{
+    "counts": {
+        "ignored": 0,
+        "violation": 35,
+        "recommendation": 0,
+        "pass": 1362,
+        "potentialviolation": 17,
+        "potentialrecommendation": 4,
+        "manual": 2,
+        "elements": 37,
+        "elementsViolation": 23,
+        "elementsViolationReview": 33
+    },
+    "startReport": 1784707059916,
+    "endReport": 1784707062393,
+    "toolID": "accessibility-checker-v3.1.82",
+    "policies": [
+        "IBM_Accessibility"
+    ],
+    "reportLevels": [
+        "violation",
+        "potentialviolation"
+    ],
+    "failLevels": [
+        "violation",
+        "potentialviolation"
+    ],
+    "scanID": "2b65aa4c-fda0-4701-a1d1-b2c2df1eb4e1",
+    "pageScanSummary": [
+        {
+            "label": "a11y-audit",
+            "counts": {
+                "ignored": 0,
+                "elements": 37,
+                "elementsViolation": 23,
+                "elementsViolationReview": 33,
+                "violation": 35,
+                "potentialviolation": 17,
+                "recommendation": 0,
+                "potentialrecommendation": 4,
+                "manual": 2,
+                "pass": 1362
+            }
+        }
+    ]
+}
